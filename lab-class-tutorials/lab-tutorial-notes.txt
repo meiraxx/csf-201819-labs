@@ -1,0 +1,8 @@
+lab-class-tutorial 1 tools:
+ldd, hexdump, strings, file, apache2 webserver (wordpress website), wireshark
+
+lab-class-tutorial 2 tools:
+mdd.exe, volatility (https://github.com/volatilityfoundation/volatility) - super useful tool to analyze memdumps (connections,connscan,pslist, apihooks)
+
+lab-class-tutorial 3 tools:
+Scalpel, Foremost (Foremost is the BEST tool ever! In the studied examples, Foremost found more than 100 files, while Scalpel only found 8 files)

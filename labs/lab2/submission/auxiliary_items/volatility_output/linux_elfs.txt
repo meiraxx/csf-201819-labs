@@ -1,0 +1,755 @@
+Pid      Name              Start              End                Elf Path                                                     Needed
+-------- ----------------- ------------------ ------------------ ------------------------------------------------------------ ------
+       1 systemd           0x00007f562d667000 0x00007f562da309a0 libc.so.6                                                    ld-linux-x86-64.so.2
+       1 systemd           0x00007f562da31000 0x00007f562dc4d428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+       1 systemd           0x00007f562e936000 0x00007f562eb3dbc0 /lib/x86_64-linux-gnu/librt-2.23.so                          
+     214 systemd-journal   0x000055c729a57000 0x000055c729aa7ba8 /lib/systemd/systemd-journald                                libselinux.so.1,librt.so.1,liblzma.so.5,libgcrypt.so.20,libacl.so.1,libpthread.so.0,libc.so.6,ld-linux-x86-64.so.2
+     214 systemd-journal   0x00007feff619e000 0x00007feff65679a0 libc.so.6                                                    ld-linux-x86-64.so.2
+     214 systemd-journal   0x00007feff6568000 0x00007feff6784428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+     638 rsyslogd          0x0000000000400000 0x00000000006930e0 /usr/sbin/rsyslogd                                           libz.so.1,libpthread.so.0,libdl.so.2,librt.so.1,libestr.so.0,libjson-c.so.2,libuuid.so.1,libc.so.6
+     638 rsyslogd          0x00007fd99b6c3000 0x00007fd99b8caa68 imuxsock.so                                                  libc.so.6
+     638 rsyslogd          0x00007fd99bce3000 0x00007fd99c0ac9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+     638 rsyslogd          0x00007fd99cacd000 0x00007fd99cce9428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+     646 dbus-daemon       0x00007f2d06bcc000 0x00007f2d06f959a0 libc.so.6                                                    ld-linux-x86-64.so.2
+     646 dbus-daemon       0x00007f2d06f96000 0x00007f2d071b2428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+     658 accounts-daemon   0x00007f4982a17000 0x00007f4982de09a0 libc.so.6                                                    ld-linux-x86-64.so.2
+     658 accounts-daemon   0x00007f4982de1000 0x00007f49830f1558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+     658 accounts-daemon   0x00007f49830f2000 0x00007f4983344ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+     658 accounts-daemon   0x00007f4983345000 0x00007f49836ccaa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+     660 cron              0x0000000000400000 0x000000000060b2f8 /usr/sbin/cron                                               libpam.so.0,libselinux.so.1,libc.so.6
+     660 cron              0x00007f1003cf0000 0x00007f10040b99a0 libc.so.6                                                    ld-linux-x86-64.so.2
+     660 cron              0x00007f10040ba000 0x00007f10042db6e0 libselinux.so.1                                              libpcre.so.3,libdl.so.2,libc.so.6,ld-linux-x86-64.so.2
+     660 cron              0x00007f10042dc000 0x00007f10044e91e8 libpam.so.0                                                  libaudit.so.1,libdl.so.2,libc.so.6
+     665 avahi-daemon      0x00007f01ab631000 0x00007f01ab9fa9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+     665 avahi-daemon      0x00007f01ab9fb000 0x00007f01abc17428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+     670 systemd-logind    0x00007f698d9f5000 0x00007f698ddbe9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+     670 systemd-logind    0x00007f698ddbf000 0x00007f698dfdb428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+     671 NetworkManager    0x00007f7dee315000 0x00007f7dee6de9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+     671 NetworkManager    0x00007f7dee6df000 0x00007f7dee8fb428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+     671 NetworkManager    0x00007f7dee8fc000 0x00007f7deec0c558 /lib/lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2            
+     671 NetworkManager    0x00007f7deec0d000 0x00007f7deee5fee8 /usr/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2     
+     723 avahi-daemon      0x00007f01ab631000 0x00007f01ab9fa9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+     723 avahi-daemon      0x00007f01ab9fb000 0x00007f01abc17428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+     747 polkitd           0x00007ffbd482c000 0x00007ffbd4a34460 libnss_compat.so.2                                           libnsl.so.1,libc.so.6
+     747 polkitd           0x00007ffbd84e5000 0x00007ffbd88ae9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+     747 polkitd           0x00007ffbd88af000 0x00007ffbd8acb428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+     747 polkitd           0x00007ffbd8ce6000 0x00007ffbd8ff6558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+     747 polkitd           0x00007ffbd8ff7000 0x00007ffbd9249ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+     773 lightdm           0x00007facf2a0a000 0x00007facf2dd39a0 libc.so.6                                                    ld-linux-x86-64.so.2
+     773 lightdm           0x00007facf2dd4000 0x00007facf2ff0428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+     773 lightdm           0x00007facf3908000 0x00007facf3c18558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+     773 lightdm           0x00007facf3c19000 0x00007facf3e6bee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+     789 Xorg              0x000055cfaf20b000 0x000055cfaf679670 /usr/lib/xorg/Xorg                                           
+     789 Xorg              0x00007f1c09776000 0x00007f1c09b3f9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+     789 Xorg              0x00007f1c09b40000 0x00007f1c09d5c428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+     789 Xorg              0x00007f1c09d5d000 0x00007f1c09f71370 libbsd.so.0                                                  libc.so.6
+     789 Xorg              0x00007f1c09f72000 0x00007f1c0a27a0f8 libm.so.6                                                    libc.so.6,ld-linux-x86-64.so.2
+     789 Xorg              0x00007f1c0a27b000 0x00007f1c0a4a1228 libaudit.so.1                                                libc.so.6
+     789 Xorg              0x00007f1c0a4a2000 0x00007f1c0a6a7098 libXdmcp.so.6                                                libc.so.6
+     789 Xorg              0x00007f1c0a6a8000 0x00007f1c0a8aa080 libxshmfence.so.1                                            libc.so.6
+     789 Xorg              0x00007f1c0a8ab000 0x00007f1c0aaae118 libXau.so.6                                                  libc.so.6
+     789 Xorg              0x00007f1c0aaaf000 0x00007f1c0acdc590 libXfont2.so.2                                               libz.so.1,libbz2.so.1.0,libm.so.6,libfontenc.so.1,libfreetype.so.6,libc.so.6
+     789 Xorg              0x00007f1c0acdd000 0x00007f1c0af84148 libpixman-1.so.0                                             libm.so.6,libpthread.so.0,libc.so.6,ld-linux-x86-64.so.2
+     789 Xorg              0x00007f1c0af85000 0x00007f1c0b196bd0 libdrm.so.2                                                  libm.so.6,libc.so.6
+     789 Xorg              0x00007f1c0b197000 0x00007f1c0b3a0190 libpciaccess.so.0                                            libz.so.1,libc.so.6
+     789 Xorg              0x00007f1c0b3a1000 0x00007f1c0b5a40f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+     789 Xorg              0x00007f1c0b5a5000 0x00007f1c0b8852c0 libgcrypt.so.20                                              libgpg-error.so.0,libc.so.6
+     789 Xorg              0x00007f1c0b886000 0x00007f1c0baa76e0 libselinux.so.1                                              libpcre.so.3,libdl.so.2,libc.so.6,ld-linux-x86-64.so.2
+     789 Xorg              0x00007f1c0baa8000 0x00007f1c0bcf32b0 libdbus-1.so.3                                               libpthread.so.0,libsystemd.so.0,libc.so.6
+     789 Xorg              0x00007f1c0bee0000 0x00007f1c0beffe60 libudev.so.1                                                 librt.so.1,libpthread.so.0,libc.so.6,ld-linux-x86-64.so.2
+     824 dnsmasq           0x00007fb61ed23000 0x00007fb61f0ec9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+     824 dnsmasq           0x00007fb61f7d3000 0x00007fb61fa08090 libnettle.so.6                                               libc.so.6
+    1025 lightdm           0x00007fd6ca2b5000 0x00007fd6ca67e9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1025 lightdm           0x00007fd6ca67f000 0x00007fd6ca89b428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1025 lightdm           0x00007fd6cb1b3000 0x00007fd6cb4c3558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1025 lightdm           0x00007fd6cb4c4000 0x00007fd6cb716ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1105 upowerd           0x00007ffa93da0000 0x00007ffa941699a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1105 upowerd           0x00007ffa94597000 0x00007ffa948a7558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1105 upowerd           0x00007ffa948a8000 0x00007ffa94afaee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1105 upowerd           0x00007ffa94afb000 0x00007ffa94d043e8 libgudev-1.0.so.0                                            libudev.so.1,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1105 upowerd           0x00007ffa94f1d000 0x00007ffa952a4aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1105 upowerd           0x00007ffa954cc000 0x00007ffa957d40f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+    1196 gnome-keyring-d   0x0000000000400000 0x00000000006f8168 /usr/bin/gnome-keyring-daemon                                libglib-2.0.so.0,libgcrypt.so.20,libcap-ng.so.0,libpthread.so.0,libc.so.6
+    1196 gnome-keyring-d   0x00007f14a3bbf000 0x00007f14a3e22790 libp11-kit.so.0                                              libffi.so.6,libdl.so.2,libpthread.so.0,libc.so.6
+    1196 gnome-keyring-d   0x00007f14a3e23000 0x00007f14a41ec9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1196 gnome-keyring-d   0x00007f14a41ed000 0x00007f14a4409428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1196 gnome-keyring-d   0x00007f14a440a000 0x00007f14a460e130 libcap-ng.so.0                                               libc.so.6,ld-linux-x86-64.so.2
+    1196 gnome-keyring-d   0x00007f14a460f000 0x00007f14a48ef2c0 libgcrypt.so.20                                              libgpg-error.so.0,libc.so.6
+    1196 gnome-keyring-d   0x00007f14a48f0000 0x00007f14a4c00558 libglib-2.0.so.0                                             libpcre.so.3,libpthread.so.0,libc.so.6
+    1196 gnome-keyring-d   0x00007f14a4c01000 0x00007f14a4e53ee8 libgobject-2.0.so.0                                          libglib-2.0.so.0,libffi.so.6,libc.so.6
+    1196 gnome-keyring-d   0x00007f14a4e54000 0x00007f14a51dbaa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1196 gnome-keyring-d   0x00007f14a51dc000 0x00007f14a540e8b8 libgck-1.so.0                                                libp11-kit.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1196 gnome-keyring-d   0x00007f14a540f000 0x00007f14a56a4510 libgcr-base-3.so.1                                           libgck-1.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libgcrypt.so.20,libp11-kit.so.0,libpthread.so.0,libc.so.6
+    1211 upstart           0x00007f7a55b2e000 0x00007f7a55ef79a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1291 upstart-udev-br   0x0000562b4010b000 0x0000562b40320168 /sbin/upstart-udev-bridge                                    libnih.so.1,libnih-dbus.so.1,libdbus-1.so.3,libudev.so.1,libc.so.6
+    1291 upstart-udev-br   0x00007f7f49279000 0x00007f7f49298e60 libudev.so.1                                                 librt.so.1,libpthread.so.0,libc.so.6,ld-linux-x86-64.so.2
+    1298 dbus-daemon       0x00007f3d4d798000 0x00007f3d4db619a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1298 dbus-daemon       0x00007f3d4db62000 0x00007f3d4dd7e428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1310 window-stack-br   0x00007f4b93d62000 0x00007f4b9412b9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1310 window-stack-br   0x00007f4b946c4000 0x00007f4b949d4558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1349 bamfdaemon        0x0000000000400000 0x000000000064d178 /usr/lib/x86_64-linux-gnu/bamf/bamfdaemon                    libX11.so.6,libstartup-notification-1.so.0,libwnck-3.so.0,libgtop-2.0.so.10,libdbusmenu-gtk3.so.4,libdbusmenu-glib.so.4,libgtk-3.so.0,libgdk-3.so.0,libgdk_pixbuf-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f754d079000 0x00007f754d2ab208 libgvfsdbus.so                                               libgvfscommon.so,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f7553241000 0x00007f7553465180 libpng12.so.0                                                libz.so.1,libm.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f7553466000 0x00007f755370f1e8 libfreetype.so.6                                             libz.so.1,libpng12.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f7553710000 0x00007f75539b7148 libpixman-1.so.0                                             libm.so.6,libpthread.so.0,libc.so.6,ld-linux-x86-64.so.2
+    1349 bamfdaemon        0x00007f75539b8000 0x00007f7553bc0978 libthai.so.0                                                 libdatrie.so.1,libc.so.6
+    1349 bamfdaemon        0x00007f7553bc1000 0x00007f7553dc6098 libXdmcp.so.6                                                libc.so.6
+    1349 bamfdaemon        0x00007f7553dc7000 0x00007f7554036108 libpcre.so.3                                                 libpthread.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f7554037000 0x00007f755423e608 libffi.so.6                                                  libc.so.6
+    1349 bamfdaemon        0x00007f755423f000 0x00007f7554459a48 libresolv.so.2                                               libc.so.6
+    1349 bamfdaemon        0x00007f755445a000 0x00007f755467b6e0 libselinux.so.1                                              libpcre.so.3,libdl.so.2,libc.so.6,ld-linux-x86-64.so.2
+    1349 bamfdaemon        0x00007f755467c000 0x00007f7554895128 libz.so.1                                                    libc.so.6
+    1349 bamfdaemon        0x00007f7554896000 0x00007f7554a9dbc0 /lib/x86_64-linux-gnu/librt-2.23.so                          
+    1349 bamfdaemon        0x00007f7554a9e000 0x00007f7554cafa98 libXext.so.6                                                 libX11.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f75557af000 0x00007f75559b10b8 libXdamage.so.1                                              libX11.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f75559b2000 0x00007f7555bb4098 libXcomposite.so.1                                           libX11.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f7555bb5000 0x00007f7555dbe1d0 libXcursor.so.1                                              libXrender.so.1,libXfixes.so.3,libX11.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f7555dbf000 0x00007f7555fc91a8 libXrandr.so.2                                               libXext.so.6,libXrender.so.1,libX11.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f7555fca000 0x00007f75561cc128 libXinerama.so.1                                             libX11.so.6,libXext.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f75561cd000 0x00007f755640f7e8 /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.9.0             
+    1349 bamfdaemon        0x00007f7556410000 0x00007f7556625908 libpangoft2-1.0.so.0                                         libpango-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libharfbuzz.so.0,libfontconfig.so.1,libfreetype.so.6,libm.so.6,libpthread.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f7556d53000 0x00007f7556f58108 libXfixes.so.3                                               libX11.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f7556f59000 0x00007f7557168288 libXi.so.6                                                   libX11.so.6,libXext.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f7557169000 0x00007f7557375638 libpangocairo-1.0.so.0                                       libpango-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libcairo.so.2,libfontconfig.so.1,libm.so.6,libpangoft2-1.0.so.0,libfreetype.so.6,libpthread.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f7557376000 0x00007f7557579198 libgmodule-2.0.so.0                                          libdl.so.2,libglib-2.0.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f755757a000 0x00007f755777d118 libXau.so.6                                                  libc.so.6
+    1349 bamfdaemon        0x00007f755777e000 0x00007f7557a860f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+    1349 bamfdaemon        0x00007f7557c8a000 0x00007f7557e932a8 libXrender.so.1                                              libX11.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f7557e94000 0x00007f75581a74c0 libcairo.so.2                                                libpthread.so.0,libpixman-1.so.0,libfontconfig.so.1,libfreetype.so.6,libpng12.so.0,libxcb-shm.so.0,libxcb-render.so.0,libxcb.so.1,libXrender.so.1,libX11.so.6,libXext.so.6,libz.so.1,librt.so.1,libm.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f75581a8000 0x00007f75583cc7f8 libatk-1.0.so.0                                              libgobject-2.0.so.0,libglib-2.0.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f75583cd000 0x00007f7558618758 libpango-1.0.so.0                                            libgobject-2.0.so.0,libglib-2.0.so.0,libthai.so.0,libm.so.6,libpthread.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f7558619000 0x00007f755881a028 libX11-xcb.so.1                                              libc.so.6
+    1349 bamfdaemon        0x00007f7558a21000 0x00007f7558c240f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+    1349 bamfdaemon        0x00007f7558c25000 0x00007f7558e462a8 libxcb.so.1                                                  libXau.so.6,libXdmcp.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f7558e47000 0x00007f75592109a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1349 bamfdaemon        0x00007f7559211000 0x00007f755942d428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1349 bamfdaemon        0x00007f755942e000 0x00007f755973e558 libglib-2.0.so.0                                             libpcre.so.3,libpthread.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f755973f000 0x00007f7559991ee8 libgobject-2.0.so.0                                          libglib-2.0.so.0,libffi.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f7559992000 0x00007f7559d19aa8 libgio-2.0.so.0                                              libgobject-2.0.so.0,libgmodule-2.0.so.0,libglib-2.0.so.0,libz.so.1,libselinux.so.1,libresolv.so.2,libc.so.6
+    1349 bamfdaemon        0x00007f7559d1a000 0x00007f7559f3b6b0 libgdk_pixbuf-2.0.so.0                                       libgmodule-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libm.so.6,libpthread.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f7559f3c000 0x00007f755a216c50 /usr/lib/x86_64-linux-gnu/libgdk-3.so.0.1800.9               
+    1349 bamfdaemon        0x00007f755a217000 0x00007f755ab458f0 /usr/lib/x86_64-linux-gnu/libgtk-3.so.0.1800.9               
+    1349 bamfdaemon        0x00007f755ab46000 0x00007f755ad617b8 libdbusmenu-glib.so.4                                        libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f755ad62000 0x00007f755af75928 libdbusmenu-gtk3.so.4                                        libdbusmenu-glib.so.4,libgtk-3.so.0,libgdk-3.so.0,libpango-1.0.so.0,libgdk_pixbuf-2.0.so.0,libgio-2.0.so.0,libatk-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f755af76000 0x00007f755b18d6a8 libgtop-2.0.so.10                                            libXau.so.6,libgobject-2.0.so.0,libglib-2.0.so.0,libc.so.6
+    1349 bamfdaemon        0x00007f755b18e000 0x00007f755b3cc0d8 libwnck-3.so.0                                               libgtk-3.so.0,libgdk-3.so.0,libpango-1.0.so.0,libatk-1.0.so.0,libgdk_pixbuf-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libcairo.so.2,libXrender.so.1,libstartup-notification-1.so.0,libXRes.so.1,libX11.so.6,libm.so.6,libc.so.6
+    1349 bamfdaemon        0x00007f755b3cd000 0x00007f755b5d5318 libstartup-notification-1.so.0                               libxcb-util.so.1,libX11-xcb.so.1,libxcb.so.1,libc.so.6
+    1349 bamfdaemon        0x00007f755b5d6000 0x00007f755b90fd38 /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0                    
+    1359 upstart-file-br   0x0000560e8cbf2000 0x0000560e8ce1a160 /sbin/upstart-file-bridge                                    libnih.so.1,libnih-dbus.so.1,libdbus-1.so.3,libc.so.6
+    1361 ibus-daemon       0x00007f9126ef2000 0x00007f91272bb9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1361 ibus-daemon       0x00007f91272bc000 0x00007f91274d8428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1361 ibus-daemon       0x00007f9127742000 0x00007f9127a52558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1361 ibus-daemon       0x00007f9127a53000 0x00007f9127ca5ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1361 ibus-daemon       0x00007f9127ca6000 0x00007f912802daa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1367 gvfsd             0x00007f809573c000 0x00007f8095b059a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1367 gvfsd             0x00007f8095b06000 0x00007f8095d22428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1367 gvfsd             0x00007f8095d23000 0x00007f8096033558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1367 gvfsd             0x00007f8096034000 0x00007f8096286ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1367 gvfsd             0x00007f8096287000 0x00007f809660eaa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1378 gvfsd-fuse        0x00007f8169acc000 0x00007f8169e959a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1378 gvfsd-fuse        0x00007f8169e96000 0x00007f816a0b2428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1378 gvfsd-fuse        0x00007f816a600000 0x00007f816a852ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1378 gvfsd-fuse        0x00007f816a853000 0x00007f816abdaaa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1379 at-spi-bus-laun   0x0000000000400000 0x0000000000605030 /usr/lib/at-spi2-core/at-spi-bus-launcher                    libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libX11.so.6,libpthread.so.0,libc.so.6
+    1379 at-spi-bus-laun   0x00007f34104dc000 0x00007f34108a59a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1379 at-spi-bus-laun   0x00007f34108a6000 0x00007f3410ac2428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1379 at-spi-bus-laun   0x00007f3410dfd000 0x00007f341110d558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1379 at-spi-bus-laun   0x00007f341110e000 0x00007f3411360ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1393 ibus-ui-gtk3      0x00007fe4e741e000 0x00007fe4e77e79a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1393 ibus-ui-gtk3      0x00007fe4e77e8000 0x00007fe4e7a04428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1393 ibus-ui-gtk3      0x00007fe4e7a05000 0x00007fe4e7d15558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1393 ibus-ui-gtk3      0x00007fe4e7d16000 0x00007fe4e7f68ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1393 ibus-ui-gtk3      0x00007fe4e8b94000 0x00007fe4e8ecdd38 /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0                    
+    1396 dbus-daemon       0x00007f69b5ae0000 0x00007f69b5ea99a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1396 dbus-daemon       0x00007f69b5eaa000 0x00007f69b60c6428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1398 ibus-x11          0x0000000000400000 0x00000000006162c0 /usr/lib/ibus/ibus-x11                                       libibus-1.0.so.5,libX11.so.6,libgtk-3.so.0,libgdk-3.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1398 ibus-x11          0x00007f4162a84000 0x00007f4162c8b608 libffi.so.6                                                  libc.so.6
+    1398 ibus-x11          0x00007f4162c8c000 0x00007f4162e93bc0 librt.so.1                                                   libpthread.so.0,libc.so.6
+    1398 ibus-x11          0x00007f4162e94000 0x00007f41630a5a98 libXext.so.6                                                 libX11.so.6,libc.so.6
+    1398 ibus-x11          0x00007f4163ba5000 0x00007f4163da70b8 libXdamage.so.1                                              libX11.so.6,libc.so.6
+    1398 ibus-x11          0x00007f4163da8000 0x00007f4163faa098 libXcomposite.so.1                                           libX11.so.6,libc.so.6
+    1398 ibus-x11          0x00007f4163fab000 0x00007f41641b41d0 libXcursor.so.1                                              libXrender.so.1,libXfixes.so.3,libX11.so.6,libc.so.6
+    1398 ibus-x11          0x00007f41641b5000 0x00007f41643bf1a8 libXrandr.so.2                                               libXext.so.6,libXrender.so.1,libX11.so.6,libc.so.6
+    1398 ibus-x11          0x00007f41643c0000 0x00007f41645c2128 libXinerama.so.1                                             libX11.so.6,libXext.so.6,libc.so.6
+    1398 ibus-x11          0x00007f41645c3000 0x00007f41648cb0f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+    1398 ibus-x11          0x00007f41648cc000 0x00007f4164b0e7e8 libfontconfig.so.1                                           libfreetype.so.6,libexpat.so.1,libpthread.so.0,libc.so.6
+    1398 ibus-x11          0x00007f4164b0f000 0x00007f4164d5a758 libpango-1.0.so.0                                            libgobject-2.0.so.0,libglib-2.0.so.0,libthai.so.0,libm.so.6,libpthread.so.0,libc.so.6
+    1398 ibus-x11          0x00007f4164d5b000 0x00007f4164f70908 libpangoft2-1.0.so.0                                         libpango-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libharfbuzz.so.0,libfontconfig.so.1,libfreetype.so.6,libm.so.6,libpthread.so.0,libc.so.6
+    1398 ibus-x11          0x00007f4165266000 0x00007f4165494e58 libatk-bridge-2.0.so.0                                       libatk-1.0.so.0,libgobject-2.0.so.0,libatspi.so.0,libdbus-1.so.3,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1398 ibus-x11          0x00007f4165495000 0x00007f41656b97f8 libatk-1.0.so.0                                              libgobject-2.0.so.0,libglib-2.0.so.0,libc.so.6
+    1398 ibus-x11          0x00007f41656ba000 0x00007f41658db6b0 libgdk_pixbuf-2.0.so.0                                       libgmodule-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libm.so.6,libpthread.so.0,libc.so.6
+    1398 ibus-x11          0x00007f41658dc000 0x00007f4165bef4c0 libcairo.so.2                                                libpthread.so.0,libpixman-1.so.0,libfontconfig.so.1,libfreetype.so.6,libpng12.so.0,libxcb-shm.so.0,libxcb-render.so.0,libxcb.so.1,libXrender.so.1,libX11.so.6,libXext.so.6,libz.so.1,librt.so.1,libm.so.6,libc.so.6
+    1398 ibus-x11          0x00007f4165df9000 0x00007f4165ffe108 libXfixes.so.3                                               libX11.so.6,libc.so.6
+    1398 ibus-x11          0x00007f4165fff000 0x00007f416620e288 libXi.so.6                                                   libX11.so.6,libXext.so.6,libc.so.6
+    1398 ibus-x11          0x00007f416620f000 0x00007f416641b638 libpangocairo-1.0.so.0                                       libpango-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libcairo.so.2,libfontconfig.so.1,libm.so.6,libpangoft2-1.0.so.0,libfreetype.so.6,libpthread.so.0,libc.so.6
+    1398 ibus-x11          0x00007f416641c000 0x00007f416661f198 libgmodule-2.0.so.0                                          libdl.so.2,libglib-2.0.so.0,libc.so.6
+    1398 ibus-x11          0x00007f4166620000 0x00007f41668230f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+    1398 ibus-x11          0x00007f4166824000 0x00007f4166a452a8 libxcb.so.1                                                  libXau.so.6,libXdmcp.so.6,libc.so.6
+    1398 ibus-x11          0x00007f4166a46000 0x00007f4166dcdaa8 libgio-2.0.so.0                                              libgobject-2.0.so.0,libgmodule-2.0.so.0,libglib-2.0.so.0,libz.so.1,libselinux.so.1,libresolv.so.2,libc.so.6
+    1398 ibus-x11          0x00007f4166dce000 0x00007f41671979a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1398 ibus-x11          0x00007f4167198000 0x00007f41673b4428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1398 ibus-x11          0x00007f41673b5000 0x00007f41676c5558 libglib-2.0.so.0                                             libpcre.so.3,libpthread.so.0,libc.so.6
+    1398 ibus-x11          0x00007f41676c6000 0x00007f4167918ee8 libgobject-2.0.so.0                                          libglib-2.0.so.0,libffi.so.6,libc.so.6
+    1398 ibus-x11          0x00007f4168523000 0x00007f416885cd38 libX11.so.6                                                  libxcb.so.1,libdl.so.2,libc.so.6
+    1403 at-spi2-registr   0x0000000000400000 0x0000000000614f78 /usr/lib/at-spi2-core/at-spi2-registryd                      libatspi.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libdbus-1.so.3,libX11.so.6,libXtst.so.6,libpthread.so.0,libc.so.6
+    1403 at-spi2-registr   0x00007f0f74ede000 0x00007f0f752a79a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1403 at-spi2-registr   0x00007f0f752a8000 0x00007f0f754c4428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1403 at-spi2-registr   0x00007f0f75c51000 0x00007f0f75f61558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1403 at-spi2-registr   0x00007f0f75f62000 0x00007f0f761b4ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1416 ibus-engine-sim   0x00007fb8d5939000 0x00007fb8d5cc0aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1416 ibus-engine-sim   0x00007fb8d6139000 0x00007fb8d65029a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1416 ibus-engine-sim   0x00007fb8d6503000 0x00007fb8d671f428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1416 ibus-engine-sim   0x00007fb8d6989000 0x00007fb8d6c99558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1416 ibus-engine-sim   0x00007fb8d6c9a000 0x00007fb8d6eecee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1601 gpg-agent         0x00007fa30a711000 0x00007fa30aada9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1601 gpg-agent         0x00007fa30aadb000 0x00007fa30acf7428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1601 gpg-agent         0x00007fa30aefd000 0x00007fa30b110238 libgpg-error.so.0                                            libc.so.6
+    1601 gpg-agent         0x00007fa30b111000 0x00007fa30b3233c0 libassuan.so.0                                               libgpg-error.so.0,libc.so.6
+    1693 hud-service       0x00007f7f27fa7000 0x00007f7f283709a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1693 hud-service       0x00007f7f29e01000 0x00007f7f2a111558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1693 hud-service       0x00007f7f2a112000 0x00007f7f2a364ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1693 hud-service       0x00007f7f2a365000 0x00007f7f2a6ecaa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1695 unity-settings-   0x0000000000400000 0x0000000000609580 /usr/lib/unity-settings-daemon/unity-settings-daemon         libgsd.so,libunity-settings-daemon.so.1,libgmodule-2.0.so.0,libnotify.so.4,libgtk-3.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1695 unity-settings-   0x00007f13f594a000 0x00007f13f5b4f270 libclipboard.so                                              libgdk-3.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libX11.so.6,libpthread.so.0,libc.so.6
+    1695 unity-settings-   0x00007f1405534000 0x00007f1405740858 libhousekeeping.so                                           libgtk-3.so.0,libnotify.so.4,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1695 unity-settings-   0x00007f1415e4c000 0x00007f14160585f8 /usr/lib/x86_64-linux-gnu/gio/modules/libdconfsettings.so    libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1695 unity-settings-   0x00007f141af93000 0x00007f141b19abc0 /lib/x86_64-linux-gnu/librt-2.23.so                          
+    1695 unity-settings-   0x00007f141bc9a000 0x00007f141be9c0b8 libXdamage.so.1                                              libX11.so.6,libc.so.6
+    1695 unity-settings-   0x00007f141be9d000 0x00007f141c09f098 libXcomposite.so.1                                           libX11.so.6,libc.so.6
+    1695 unity-settings-   0x00007f141cf7c000 0x00007f141d1be7e8 /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.9.0             
+    1695 unity-settings-   0x00007f141d916000 0x00007f141db44e58 libatk-bridge-2.0.so.0                                       libatk-1.0.so.0,libgobject-2.0.so.0,libatspi.so.0,libdbus-1.so.3,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1695 unity-settings-   0x00007f141e287000 0x00007f141e48c108 libXfixes.so.3                                               libX11.so.6,libc.so.6
+    1695 unity-settings-   0x00007f141e69d000 0x00007f141e9d6d38 /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0                    
+    1695 unity-settings-   0x00007f141ee06000 0x00007f141f0090f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+    1695 unity-settings-   0x00007f141f702000 0x00007f141fa0a0f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+    1695 unity-settings-   0x00007f141fa0b000 0x00007f141fdd49a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1695 unity-settings-   0x00007f141fdd5000 0x00007f141fff1428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1695 unity-settings-   0x00007f141fff2000 0x00007f1420302558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1695 unity-settings-   0x00007f1420303000 0x00007f1420555ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1695 unity-settings-   0x00007f1420556000 0x00007f14208ddaa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1695 unity-settings-   0x00007f1421839000 0x00007f1421a4c4c8 libgsd.so                                                    libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1704 gnome-session-b   0x00007fa3553fe000 0x00007fa3557c79a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1704 gnome-session-b   0x00007fa3557c8000 0x00007fa355ad8558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1704 gnome-session-b   0x00007fa355ad9000 0x00007fa355d2bee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1704 gnome-session-b   0x00007fa355d2c000 0x00007fa3560b3aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1704 gnome-session-b   0x00007fa356518000 0x00007fa356731f80 libICE.so.6                                                  libc.so.6
+    1704 gnome-session-b   0x00007fa356732000 0x00007fa356939170 libSM.so.6                                                   libICE.so.6,libuuid.so.1,libc.so.6
+    1716 unity-panel-ser   0x0000000000400000 0x0000000000612818 /usr/lib/x86_64-linux-gnu/unity/unity-panel-service          libatk-bridge-2.0.so.0,libindicator3.so.7,libX11.so.6,libido3-0.1.so.0,libgtk-3.so.0,libgdk-3.so.0,libatk-1.0.so.0,libgdk_pixbuf-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1716 unity-panel-ser   0x00007ff0187c2000 0x00007ff0189d2730 libappmenu.so                                                libindicator3.so.7,libdbusmenu-gtk3.so.4,libdbusmenu-glib.so.4,libgtk-3.so.0,libgdk-3.so.0,libbamf3.so.2,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libX11.so.6,libpthread.so.0,libc.so.6
+    1716 unity-panel-ser   0x00007ff0191d4000 0x00007ff0193ef7b8 libdbusmenu-glib.so.4                                        libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1716 unity-panel-ser   0x00007ff0193f0000 0x00007ff019603928 libdbusmenu-gtk3.so.4                                        libdbusmenu-glib.so.4,libgtk-3.so.0,libgdk-3.so.0,libpango-1.0.so.0,libgdk_pixbuf-2.0.so.0,libgio-2.0.so.0,libatk-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1716 unity-panel-ser   0x00007ff01eb85000 0x00007ff01ed8e2a8 libXrender.so.1                                              libX11.so.6,libc.so.6
+    1716 unity-panel-ser   0x00007ff01f19d000 0x00007ff01f3c1180 /lib/x86_64-linux-gnu/libpng12.so.0.54.0                     
+    1716 unity-panel-ser   0x00007ff01f873000 0x00007ff01fb1c1e8 libfreetype.so.6                                             libz.so.1,libpng12.so.0,libc.so.6
+    1716 unity-panel-ser   0x00007ff01fb1d000 0x00007ff01fd22098 libXdmcp.so.6                                                libc.so.6
+    1716 unity-panel-ser   0x00007ff01fd23000 0x00007ff01ff26118 libXau.so.6                                                  libc.so.6
+    1716 unity-panel-ser   0x00007ff01ff27000 0x00007ff020196108 libpcre.so.3                                                 libpthread.so.0,libc.so.6
+    1716 unity-panel-ser   0x00007ff0209f6000 0x00007ff020bfdbc0 /lib/x86_64-linux-gnu/librt-2.23.so                          
+    1716 unity-panel-ser   0x00007ff020bfe000 0x00007ff020e0fa98 /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0                   
+    1716 unity-panel-ser   0x00007ff02190f000 0x00007ff021b110b8 libXdamage.so.1                                              libX11.so.6,libc.so.6
+    1716 unity-panel-ser   0x00007ff021b12000 0x00007ff021d14098 libXcomposite.so.1                                           libX11.so.6,libc.so.6
+    1716 unity-panel-ser   0x00007ff021d15000 0x00007ff021f1e1d0 libXcursor.so.1                                              libXrender.so.1,libXfixes.so.3,libX11.so.6,libc.so.6
+    1716 unity-panel-ser   0x00007ff02212a000 0x00007ff02232c128 libXinerama.so.1                                             libX11.so.6,libXext.so.6,libc.so.6
+    1716 unity-panel-ser   0x00007ff02232d000 0x00007ff02256f7e8 /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.9.0             
+    1716 unity-panel-ser   0x00007ff022c84000 0x00007ff022e89108 libXfixes.so.3                                               libX11.so.6,libc.so.6
+    1716 unity-panel-ser   0x00007ff023807000 0x00007ff023a0a0f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+    1716 unity-panel-ser   0x00007ff023a0b000 0x00007ff023c2c2a8 libxcb.so.1                                                  libXau.so.6,libXdmcp.so.6,libc.so.6
+    1716 unity-panel-ser   0x00007ff023c2d000 0x00007ff023f350f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+    1716 unity-panel-ser   0x00007ff0245b5000 0x00007ff02497e9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1716 unity-panel-ser   0x00007ff02497f000 0x00007ff024b9b428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1716 unity-panel-ser   0x00007ff024b9c000 0x00007ff024eac558 libglib-2.0.so.0                                             libpcre.so.3,libpthread.so.0,libc.so.6
+    1716 unity-panel-ser   0x00007ff024ead000 0x00007ff0250ffee8 libgobject-2.0.so.0                                          libglib-2.0.so.0,libffi.so.6,libc.so.6
+    1716 unity-panel-ser   0x00007ff025100000 0x00007ff025487aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1716 unity-panel-ser   0x00007ff0266fc000 0x00007ff026a35d38 /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0                    
+    1716 unity-panel-ser   0x00007ff026a36000 0x00007ff026c47758 libindicator3.so.7                                           libgmodule-2.0.so.0,libgtk-3.so.0,libgdk_pixbuf-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libm.so.6,libpthread.so.0,libc.so.6
+    1748 indicator-messa   0x00007ffb327f9000 0x00007ffb32bc29a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1748 indicator-messa   0x00007ffb32bc3000 0x00007ffb32ddf428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1748 indicator-messa   0x00007ffb33029000 0x00007ffb33339558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1748 indicator-messa   0x00007ffb3333a000 0x00007ffb3358cee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1748 indicator-messa   0x00007ffb3358d000 0x00007ffb33914aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1750 indicator-power   0x00007f7402184000 0x00007f740254d9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1750 indicator-power   0x00007f740254e000 0x00007f740285e558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1750 indicator-power   0x00007f740285f000 0x00007f7402ab1ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1750 indicator-power   0x00007f74031e7000 0x00007f740356eaa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1766 indicator-datet   0x00007fd187dc5000 0x00007fd18818e9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1766 indicator-datet   0x00007fd188727000 0x00007fd188a37558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1766 indicator-datet   0x00007fd188a38000 0x00007fd188c8aee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1766 indicator-datet   0x00007fd18969c000 0x00007fd1898b8428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1768 indicator-keybo   0x00007fc38b677000 0x00007fc38b9b0d38 /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0                    
+    1768 indicator-keybo   0x00007fc38b9b1000 0x00007fc38bd7a9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1768 indicator-keybo   0x00007fc38bd7b000 0x00007fc38bf97428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1768 indicator-keybo   0x00007fc38c3fa000 0x00007fc38c70a558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1768 indicator-keybo   0x00007fc38c70b000 0x00007fc38c95dee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1768 indicator-keybo   0x00007fc38c95e000 0x00007fc38cce5aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1773 indicator-sound   0x00007f8d315d6000 0x00007f8d3199f9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1773 indicator-sound   0x00007f8d320b9000 0x00007f8d323c9558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1773 indicator-sound   0x00007f8d323ca000 0x00007f8d3261cee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1773 indicator-sound   0x00007f8d32820000 0x00007f8d32ba7aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1779 indicator-print   0x00007f4bdb72d000 0x00007f4bdb949428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1779 indicator-print   0x00007f4bdb94a000 0x00007f4bdbc520f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+    1779 indicator-print   0x00007f4bdbc53000 0x00007f4bdbe957e8 /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.9.0             
+    1779 indicator-print   0x00007f4bdd180000 0x00007f4bdd385108 libXfixes.so.3                                               libX11.so.6,libc.so.6
+    1779 indicator-print   0x00007f4bdd596000 0x00007f4bdd8cfd38 /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0                    
+    1779 indicator-print   0x00007f4bddfbc000 0x00007f4bde3859a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1779 indicator-print   0x00007f4bde822000 0x00007f4bdeb32558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1779 indicator-print   0x00007f4bdeb33000 0x00007f4bded85ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1779 indicator-print   0x00007f4bded86000 0x00007f4bdf10daa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1785 indicator-sessi   0x00007f06fbcf5000 0x00007f06fbf11428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1785 indicator-sessi   0x00007f06fcbe5000 0x00007f06fcfae9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1785 indicator-sessi   0x00007f06fcfaf000 0x00007f06fd2bf558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1785 indicator-sessi   0x00007f06fd2c0000 0x00007f06fd512ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1785 indicator-sessi   0x00007f06fd716000 0x00007f06fda9daa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1810 indicator-appli   0x00007f7202f4b000 0x00007f72033149a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1810 indicator-appli   0x00007f7203315000 0x00007f7203531428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1810 indicator-appli   0x00007f7203532000 0x00007f7203842558 libglib-2.0.so.0                                             libpcre.so.3,libpthread.so.0,libc.so.6
+    1814 pulseaudio        0x00007ff8b9553000 0x00007ff8b9758098 libXdmcp.so.6                                                libc.so.6
+    1814 pulseaudio        0x00007ff8b9759000 0x00007ff8b995c118 libXau.so.6                                                  libc.so.6
+    1814 pulseaudio        0x00007ff8bb787000 0x00007ff8bb988028 libX11-xcb.so.1                                              libc.so.6
+    1814 pulseaudio        0x00007ff8bc0ae000 0x00007ff8bc4779a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1814 pulseaudio        0x00007ff8bc478000 0x00007ff8bc7800f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+    1814 pulseaudio        0x00007ff8bc781000 0x00007ff8bc9840f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+    1814 pulseaudio        0x00007ff8bcb8d000 0x00007ff8bcda9428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1845 dconf-service     0x00007f83305b8000 0x00007f83309819a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1845 dconf-service     0x00007f8330982000 0x00007f8330b9e428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1845 dconf-service     0x00007f8330b9f000 0x00007f8330eaf558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1845 dconf-service     0x00007f8330eb0000 0x00007f8331102ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1877 compiz            0x0000000000400000 0x0000000000603140 /usr/bin/compiz                                              libcompiz_core.so.ABI-20180221,libstdc++.so.6,libgcc_s.so.1,libc.so.6
+    1877 compiz            0x00007fce27446000 0x00007fce27657758 libindicator3.so.7                                           libgmodule-2.0.so.0,libgtk-3.so.0,libgdk_pixbuf-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libm.so.6,libpthread.so.0,libc.so.6
+    1877 compiz            0x00007fce27ab1000 0x00007fce27ccc7b8 libdbusmenu-glib.so.4                                        libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1877 compiz            0x00007fce2c593000 0x00007fce2c7b46b0 libgdk_pixbuf-2.0.so.0                                       libgmodule-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libm.so.6,libpthread.so.0,libc.so.6
+    1877 compiz            0x00007fce2fc04000 0x00007fce2fe28180 libpng12.so.0                                                libz.so.1,libm.so.6,libc.so.6
+    1877 compiz            0x00007fce427c4000 0x00007fce429c6098 libXcomposite.so.1                                           libX11.so.6,libc.so.6
+    1877 compiz            0x00007fce429c7000 0x00007fce42bc90b8 libXdamage.so.1                                              libX11.so.6,libc.so.6
+    1877 compiz            0x00007fce4d1ea000 0x00007fce4d43cee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1877 compiz            0x00007fce4df7d000 0x00007fce4e1800f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+    1877 compiz            0x00007fce4e181000 0x00007fce4e39d428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1877 compiz            0x00007fce4e7ad000 0x00007fce4eabd558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1877 compiz            0x00007fce4f777000 0x00007fce4fab0d38 libX11.so.6                                                  libxcb.so.1,libdl.so.2,libc.so.6
+    1877 compiz            0x00007fce4fab1000 0x00007fce4fcba1d0 libXcursor.so.1                                              libXrender.so.1,libXfixes.so.3,libX11.so.6,libc.so.6
+    1877 compiz            0x00007fce4fcbb000 0x00007fce4fecca98 libXext.so.6                                                 libX11.so.6,libc.so.6
+    1877 compiz            0x00007fce4fecd000 0x00007fce502969a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1877 compiz            0x00007fce5082f000 0x00007fce50b1e0a0 /usr/lib/x86_64-linux-gnu/libcompiz_core.so.0.9.12.3         
+    1898 nm-applet         0x00007f1a07c7d000 0x00007f1a07fb6d38 /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0                    
+    1898 nm-applet         0x00007f1a08ade000 0x00007f1a08ea79a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1898 nm-applet         0x00007f1a08ea8000 0x00007f1a090c4428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1898 nm-applet         0x00007f1a092f4000 0x00007f1a09604558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1898 nm-applet         0x00007f1a09605000 0x00007f1a09857ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1898 nm-applet         0x00007f1a09858000 0x00007f1a09bdfaa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1901 nautilus          0x0000000000400000 0x000000000075ccf0 /usr/bin/nautilus                                            libtracker-sparql-1.0.so.0,libzeitgeist-2.0.so.0,libnautilus-extension.so.1,libgailutil-3.so.0,libgnome-desktop-3.so.12,libgtk-3.so.0,libgdk-3.so.0,libpangocairo-1.0.so.0,libpango-1.0.so.0,libatk-1.0.so.0,libcairo-gobject.so.2,libcairo.so.2,libX11.so.6,libgmodule-2.0.so.0,libnotify.so.4,libgdk_pixbuf-2.0.so.0,libexif.so.12,libexempi.so.3,libunity.so.9,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libdbusmenu-glib.so.4,libselinux.so.1,libm.so.6,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbad9646000 0x00007fbad987cc08 librsvg-2.so.2                                               libgdk_pixbuf-2.0.so.0,libgio-2.0.so.0,libpangocairo-1.0.so.0,libpango-1.0.so.0,libgobject-2.0.so.0,libcairo.so.2,libcroco-0.6.so.3,libglib-2.0.so.0,libxml2.so.2,libm.so.6,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbad9d01000 0x00007fbad9f08450 im-ibus.so                                                   libgtk-3.so.0,libgdk-3.so.0,libpango-1.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libibus-1.0.so.5,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbadb5ab000 0x00007fbadb7b8608 libterminal-nautilus.so                                      libnautilus-extension.so.1,libgtk-3.so.0,libgdk-3.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbadbbf8000 0x00007fbadbdfa0f8 libnautilus-sendto.so                                        libnautilus-extension.so.1,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libc.so.6
+    1901 nautilus          0x00007fbadbdfb000 0x00007fbadbfff150 libnautilus-fileroller.so                                    libnautilus-extension.so.1,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libc.so.6
+    1901 nautilus          0x00007fbae803a000 0x00007fbae823e238 /usr/lib/nautilus/extensions-3.0/libdeja-dup.so              libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libnautilus-extension.so.1,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbae8444000 0x00007fbae864e4d0 libnautilus-share.so                                         libnautilus-extension.so.1,libgtk-3.so.0,libgdk-3.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbae9ec8000 0x00007fbaea0d45f8 /usr/lib/x86_64-linux-gnu/gio/modules/libdconfsettings.so    libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbaea0d5000 0x00007fbaea2f17f8 libgioremote-volume-monitor.so                               libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libgvfscommon.so,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbaebf64000 0x00007fbaec1745c0 libunity-gtk3-parser.so.0                                    libgtk-3.so.0,libgdk-3.so.0,libgdk_pixbuf-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbaec175000 0x00007fbaec37b308 libunity-gtk-module.so                                       libgtk-3.so.0,libgdk-3.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libX11.so.6,libunity-gtk3-parser.so.0,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbaefd66000 0x00007fbaeff6b098 libXdmcp.so.6                                                libc.so.6
+    1901 nautilus          0x00007fbaeff6c000 0x00007fbaf016f118 libXau.so.6                                                  libc.so.6
+    1901 nautilus          0x00007fbaf25fb000 0x00007fbaf2810910 libgcc_s.so.1                                                libc.so.6
+    1901 nautilus          0x00007fbaf2811000 0x00007fbaf2b92400 /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.21                
+    1901 nautilus          0x00007fbaf2b93000 0x00007fbaf2dbb068 libexpat.so.1                                                libc.so.6
+    1901 nautilus          0x00007fbaf2dbc000 0x00007fbaf2fbf0f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+    1901 nautilus          0x00007fbaf2fc0000 0x00007fbaf31d9128 libz.so.1                                                    libc.so.6
+    1901 nautilus          0x00007fbaf31da000 0x00007fbaf33e32a8 libXrender.so.1                                              libX11.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf33e4000 0x00007fbaf36052a8 libxcb.so.1                                                  libXau.so.6,libXdmcp.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf3606000 0x00007fbaf380f068 libxcb-render.so.0                                           libxcb.so.1,libc.so.6
+    1901 nautilus          0x00007fbaf3810000 0x00007fbaf3a13068 libxcb-shm.so.0                                              libxcb.so.1,libc.so.6
+    1901 nautilus          0x00007fbaf3a14000 0x00007fbaf3c38180 libpng12.so.0                                                libz.so.1,libm.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf3c39000 0x00007fbaf3ee0148 libpixman-1.so.0                                             libm.so.6,libpthread.so.0,libc.so.6,ld-linux-x86-64.so.2
+    1901 nautilus          0x00007fbaf3ee1000 0x00007fbaf40e9978 libthai.so.0                                                 libdatrie.so.1,libc.so.6
+    1901 nautilus          0x00007fbaf40ea000 0x00007fbaf43931e8 libfreetype.so.6                                             libz.so.1,libpng12.so.0,libc.so.6
+    1901 nautilus          0x00007fbaf4394000 0x00007fbaf45a5a98 libXext.so.6                                                 libX11.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf45a6000 0x00007fbaf484c760 /usr/lib/x86_64-linux-gnu/libmirclient.so.9                  libxkbcommon.so.0,libmircommon.so.7,libmirprotobuf.so.3,libdl.so.2,libcapnp-0.5.3.so,libmircore.so.1,libboost_system.so.1.58.0,libprotobuf-lite.so.9,libstdc++.so.6,libgcc_s.so.1,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbaf484d000 0x00007fbaf4a5b4c8 libwayland-client.so.0                                       libffi.so.6,librt.so.1,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbaf4a5c000 0x00007fbaf4c5d038 libwayland-egl.so.1                                          libc.so.6
+    1901 nautilus          0x00007fbaf4c5e000 0x00007fbaf4e651f0 libwayland-cursor.so.0                                       libwayland-client.so.0,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbaf4e66000 0x00007fbaf50a4178 libxkbcommon.so.0                                            libc.so.6
+    1901 nautilus          0x00007fbaf50a5000 0x00007fbaf52a70b8 libXdamage.so.1                                              libX11.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf52a8000 0x00007fbaf54aa098 libXcomposite.so.1                                           libX11.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf54ab000 0x00007fbaf56b41d0 libXcursor.so.1                                              libXrender.so.1,libXfixes.so.3,libX11.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf56b5000 0x00007fbaf58bf1a8 libXrandr.so.2                                               libXext.so.6,libXrender.so.1,libX11.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf58c0000 0x00007fbaf5ac2128 libXinerama.so.1                                             libX11.so.6,libXext.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf5ac3000 0x00007fbaf5d057e8 libfontconfig.so.1                                           libfreetype.so.6,libexpat.so.1,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbaf5d06000 0x00007fbaf5f1b908 libpangoft2-1.0.so.0                                         libpango-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libharfbuzz.so.0,libfontconfig.so.1,libfreetype.so.6,libm.so.6,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbaf5f1c000 0x00007fbaf6210938 /usr/lib/x86_64-linux-gnu/libepoxy.so.0.0.0                  
+    1901 nautilus          0x00007fbaf6211000 0x00007fbaf643fe58 libatk-bridge-2.0.so.0                                       libatk-1.0.so.0,libgobject-2.0.so.0,libatspi.so.0,libdbus-1.so.3,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbaf6440000 0x00007fbaf6645108 libXfixes.so.3                                               libX11.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf6646000 0x00007fbaf6855288 libXi.so.6                                                   libX11.so.6,libXext.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf6856000 0x00007fbaf6a5dbc0 /lib/x86_64-linux-gnu/librt-2.23.so                          
+    1901 nautilus          0x00007fbaf6a5e000 0x00007fbaf6d326d8 libsqlite3.so.0                                              libpthread.so.0,libdl.so.2,libc.so.6
+    1901 nautilus          0x00007fbaf6d33000 0x00007fbaf6f37170 libuuid.so.1                                                 libc.so.6,ld-linux-x86-64.so.2
+    1901 nautilus          0x00007fbaf6f38000 0x00007fbaf71476c0 libtracker-common.so.0                                       libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libunistring.so.0,libm.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf7148000 0x00007fbaf748e698 libtracker-data.so.0                                         libuuid.so.1,libtracker-common.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libunistring.so.0,libm.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf748f000 0x00007fbaf78589a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1901 nautilus          0x00007fbaf7859000 0x00007fbaf7a75428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1901 nautilus          0x00007fbaf7a76000 0x00007fbaf7d7e0f8 libm.so.6                                                    libc.so.6,ld-linux-x86-64.so.2
+    1901 nautilus          0x00007fbaf7d7f000 0x00007fbaf7fa06e0 libselinux.so.1                                              libpcre.so.3,libdl.so.2,libc.so.6,ld-linux-x86-64.so.2
+    1901 nautilus          0x00007fbaf7fa1000 0x00007fbaf81bc7b8 libdbusmenu-glib.so.4                                        libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbaf81bd000 0x00007fbaf84cd558 libglib-2.0.so.0                                             libpcre.so.3,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbaf84ce000 0x00007fbaf8720ee8 libgobject-2.0.so.0                                          libglib-2.0.so.0,libffi.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf8721000 0x00007fbaf8aa8aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1901 nautilus          0x00007fbaf8aa9000 0x00007fbaf8d4a868 /usr/lib/x86_64-linux-gnu/libunity.so.9.0.2                  
+    1901 nautilus          0x00007fbaf8d4b000 0x00007fbaf907e4e8 /usr/lib/x86_64-linux-gnu/libexempi.so.3.2.4                 
+    1901 nautilus          0x00007fbaf907f000 0x00007fbaf92c2128 libexif.so.12                                                libm.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf92c3000 0x00007fbaf94e46b0 libgdk_pixbuf-2.0.so.0                                       libgmodule-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libm.so.6,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbaf94e5000 0x00007fbaf96ec2e0 libnotify.so.4                                               libgdk_pixbuf-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libc.so.6
+    1901 nautilus          0x00007fbaf96ed000 0x00007fbaf98f0198 libgmodule-2.0.so.0                                          libdl.so.2,libglib-2.0.so.0,libc.so.6
+    1901 nautilus          0x00007fbaf98f1000 0x00007fbaf9c2ad38 libX11.so.6                                                  libxcb.so.1,libdl.so.2,libc.so.6
+    1901 nautilus          0x00007fbaf9c2b000 0x00007fbaf9f3e4c0 libcairo.so.2                                                libpthread.so.0,libpixman-1.so.0,libfontconfig.so.1,libfreetype.so.6,libpng12.so.0,libxcb-shm.so.0,libxcb-render.so.0,libxcb.so.1,libXrender.so.1,libX11.so.6,libXext.so.6,libz.so.1,librt.so.1,libm.so.6,libc.so.6
+    1901 nautilus          0x00007fbaf9f3f000 0x00007fbafa147160 libcairo-gobject.so.2                                        libcairo.so.2,libgobject-2.0.so.0,libglib-2.0.so.0,libc.so.6
+    1901 nautilus          0x00007fbafa148000 0x00007fbafa36c7f8 libatk-1.0.so.0                                              libgobject-2.0.so.0,libglib-2.0.so.0,libc.so.6
+    1901 nautilus          0x00007fbafa36d000 0x00007fbafa5b8758 libpango-1.0.so.0                                            libgobject-2.0.so.0,libglib-2.0.so.0,libthai.so.0,libm.so.6,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbafa5b9000 0x00007fbafa7c5638 libpangocairo-1.0.so.0                                       libpango-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libcairo.so.2,libfontconfig.so.1,libm.so.6,libpangoft2-1.0.so.0,libfreetype.so.6,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbafa7c6000 0x00007fbafaaa0c50 /usr/lib/x86_64-linux-gnu/libgdk-3.so.0.1800.9               
+    1901 nautilus          0x00007fbafaaa1000 0x00007fbafb3cf8f0 libgtk-3.so.0                                                libgdk-3.so.0,libgmodule-2.0.so.0,libpangocairo-1.0.so.0,libX11.so.6,libXi.so.6,libXfixes.so.3,libcairo-gobject.so.2,libcairo.so.2,libgdk_pixbuf-2.0.so.0,libatk-1.0.so.0,libatk-bridge-2.0.so.0,libepoxy.so.0,libpangoft2-1.0.so.0,libpango-1.0.so.0,libfontconfig.so.1,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libm.so.6,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbafb3d0000 0x00007fbafb60b6b8 libgnome-desktop-3.so.12                                     libX11.so.6,libm.so.6,libgtk-3.so.0,libgdk-3.so.0,libcairo.so.2,libgdk_pixbuf-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,librt.so.1,libc.so.6
+    1901 nautilus          0x00007fbafb60c000 0x00007fbafb814320 libgailutil-3.so.0                                           libgtk-3.so.0,libgdk-3.so.0,libatk-1.0.so.0,libpango-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libm.so.6,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbafb815000 0x00007fbafba1e2a0 libnautilus-extension.so.1                                   libgtk-3.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libc.so.6
+    1901 nautilus          0x00007fbafba1f000 0x00007fbafbc7db98 libzeitgeist-2.0.so.0                                        libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libsqlite3.so.0,libpthread.so.0,libc.so.6
+    1901 nautilus          0x00007fbafbc7e000 0x00007fbafbe9b5c0 libtracker-sparql-1.0.so.0                                   libtracker-data.so.0,libtracker-common.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libuuid.so.1,libc.so.6
+    1909 unity-fallback-   0x0000000000400000 0x00000000006095e0 /usr/lib/unity-settings-daemon/unity-fallback-mount-helper   libgtk-3.so.0,libgdk-3.so.0,libgdk_pixbuf-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libX11.so.6,libgsd.so,libpthread.so.0,libc.so.6
+    1909 unity-fallback-   0x00007fc03db30000 0x00007fc03dd5ee58 libatk-bridge-2.0.so.0                                       libatk-1.0.so.0,libgobject-2.0.so.0,libatspi.so.0,libdbus-1.so.3,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1909 unity-fallback-   0x00007fc03e4a1000 0x00007fc03e6a6108 libXfixes.so.3                                               libX11.so.6,libc.so.6
+    1909 unity-fallback-   0x00007fc03ecc8000 0x00007fc03f0919a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1909 unity-fallback-   0x00007fc03f092000 0x00007fc03f2ae428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1909 unity-fallback-   0x00007fc03f4c3000 0x00007fc03f7fcd38 /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0                    
+    1909 unity-fallback-   0x00007fc03f7fd000 0x00007fc03fb0d558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1909 unity-fallback-   0x00007fc03fb0e000 0x00007fc03fd60ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1909 unity-fallback-   0x00007fc03fd61000 0x00007fc0400e8aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1910 polkit-gnome-au   0x0000000000400000 0x000000000060a748 /usr/lib/policykit-1-gnome/po...gnome-authentication-agent-1 libgtk-3.so.0,libgdk-3.so.0,libgdk_pixbuf-2.0.so.0,libpolkit-agent-1.so.0,libpolkit-gobject-1.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1910 polkit-gnome-au   0x00007f643c760000 0x00007f643c98ee58 libatk-bridge-2.0.so.0                                       libatk-1.0.so.0,libgobject-2.0.so.0,libatspi.so.0,libdbus-1.so.3,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1910 polkit-gnome-au   0x00007f643d0d1000 0x00007f643d2d6108 libXfixes.so.3                                               libX11.so.6,libc.so.6
+    1910 polkit-gnome-au   0x00007f643d4e7000 0x00007f643d820d38 /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0                    
+    1910 polkit-gnome-au   0x00007f643dc32000 0x00007f643dffb9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1910 polkit-gnome-au   0x00007f643dffc000 0x00007f643e218428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1910 polkit-gnome-au   0x00007f643e219000 0x00007f643e529558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1910 polkit-gnome-au   0x00007f643e52a000 0x00007f643e77cee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1910 polkit-gnome-au   0x00007f643e77d000 0x00007f643eb04aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1911 gnome-software    0x00007f236a8e3000 0x00007f236aae8098 libXdmcp.so.6                                                libc.so.6
+    1911 gnome-software    0x00007f236aae9000 0x00007f236acec118 libXau.so.6                                                  libc.so.6
+    1911 gnome-software    0x00007f23722f2000 0x00007f237262bd38 /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0                    
+    1911 gnome-software    0x00007f2373c81000 0x00007f237404a9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1911 gnome-software    0x00007f237404b000 0x00007f2374267428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1911 gnome-software    0x00007f2374268000 0x00007f23745700f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+    1911 gnome-software    0x00007f2374571000 0x00007f2374881558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1911 gnome-software    0x00007f2374882000 0x00007f2374ad4ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1911 gnome-software    0x00007f2374ad5000 0x00007f2374e5caa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1937 gvfs-udisks2-vo   0x0000000000400000 0x0000000000628198 /usr/lib/gvfs/gvfs-udisks2-volume-monitor                    libudisks2.so.0,libgudev-1.0.so.0,libsystemd.so.0,libsecret-1.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1937 gvfs-udisks2-vo   0x00007f4151de6000 0x00007f41521af9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1937 gvfs-udisks2-vo   0x00007f41521b0000 0x00007f41523cc428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1937 gvfs-udisks2-vo   0x00007f41523cd000 0x00007f41526dd558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1937 gvfs-udisks2-vo   0x00007f41526de000 0x00007f4152930ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1937 gvfs-udisks2-vo   0x00007f4152931000 0x00007f4152cb8aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1948 udisksd           0x00007fb3c2f49000 0x00007fb3c3150bc0 /lib/x86_64-linux-gnu/librt-2.23.so                          
+    1948 udisksd           0x00007fb3c3578000 0x00007fb3c39419a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1948 udisksd           0x00007fb3c3942000 0x00007fb3c3b5e428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1948 udisksd           0x00007fb3c3b5f000 0x00007fb3c3e6f558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1948 udisksd           0x00007fb3c3e70000 0x00007fb3c40c2ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1948 udisksd           0x00007fb3c40c3000 0x00007fb3c444aaa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1959 fwupd             0x00007f8ce878c000 0x00007f8ce8993308 libfu_plugin_udev.so                                         libgudev-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libc.so.6
+    1959 fwupd             0x00007f8ceee41000 0x00007f8cef20a9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1959 fwupd             0x00007f8cef20b000 0x00007f8cef427428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1959 fwupd             0x00007f8cefb4d000 0x00007f8cefe5d558 /lib/lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2            
+    1959 fwupd             0x00007f8cefe5e000 0x00007f8cf00b0ee8 /usr/usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2     
+    1959 fwupd             0x00007f8cf1016000 0x00007f8cf1035e60 libudev.so.1                                                 librt.so.1,libpthread.so.0,libc.so.6,ld-linux-x86-64.so.2
+    1965 gvfs-afc-volume   0x0000000000400000 0x0000000000614808 /usr/lib/gvfs/gvfs-afc-volume-monitor                        libimobiledevice.so.6,libplist.so.3,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1965 gvfs-afc-volume   0x00007ffa86028000 0x00007ffa863f19a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1965 gvfs-afc-volume   0x00007ffa863f2000 0x00007ffa8660e428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1965 gvfs-afc-volume   0x00007ffa8660f000 0x00007ffa8691f558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1965 gvfs-afc-volume   0x00007ffa86920000 0x00007ffa86b72ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1965 gvfs-afc-volume   0x00007ffa86b73000 0x00007ffa86efaaa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1974 gvfs-gphoto2-vo   0x0000000000400000 0x0000000000616880 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor                    libgphoto2.so.6,libgphoto2_port.so.12,libgio-2.0.so.0,libgudev-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1974 gvfs-gphoto2-vo   0x00007ff6a4581000 0x00007ff6a494a9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1974 gvfs-gphoto2-vo   0x00007ff6a494b000 0x00007ff6a4b67428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1974 gvfs-gphoto2-vo   0x00007ff6a4b68000 0x00007ff6a4e78558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1974 gvfs-gphoto2-vo   0x00007ff6a4e79000 0x00007ff6a50cbee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1974 gvfs-gphoto2-vo   0x00007ff6a52d6000 0x00007ff6a565daa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1981 gvfs-goa-volume   0x0000000000400000 0x0000000000616920 /usr/lib/gvfs/gvfs-goa-volume-monitor                        libgoa-1.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1981 gvfs-goa-volume   0x00007faf75ea1000 0x00007faf7626a9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1981 gvfs-goa-volume   0x00007faf7626b000 0x00007faf76487428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1981 gvfs-goa-volume   0x00007faf76488000 0x00007faf76798558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1981 gvfs-goa-volume   0x00007faf76799000 0x00007faf769ebee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1981 gvfs-goa-volume   0x00007faf769ec000 0x00007faf76d73aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    1987 gvfs-mtp-volume   0x0000000000400000 0x0000000000616810 /usr/lib/gvfs/gvfs-mtp-volume-monitor                        libgudev-1.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    1987 gvfs-mtp-volume   0x00007f5e83067000 0x00007f5e834309a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    1987 gvfs-mtp-volume   0x00007f5e83431000 0x00007f5e8364d428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    1987 gvfs-mtp-volume   0x00007f5e8364e000 0x00007f5e8395e558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    1987 gvfs-mtp-volume   0x00007f5e8395f000 0x00007f5e83bb1ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    1987 gvfs-mtp-volume   0x00007f5e83bb2000 0x00007f5e83f39aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    2020 gvfsd-trash       0x0000000000400000 0x000000000060b680 /usr/lib/gvfs/gvfsd-trash                                    libgvfsdaemon.so,libgvfscommon.so,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    2020 gvfsd-trash       0x00007fd3c3228000 0x00007fd3c35f19a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    2020 gvfsd-trash       0x00007fd3c35f2000 0x00007fd3c380e428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    2020 gvfsd-trash       0x00007fd3c380f000 0x00007fd3c3b1f558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    2020 gvfsd-trash       0x00007fd3c3b20000 0x00007fd3c3d72ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    2020 gvfsd-trash       0x00007fd3c3d73000 0x00007fd3c40faaa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    2047 gvfsd-metadata    0x0000000000400000 0x00000000006127d8 /usr/lib/gvfs/gvfsd-metadata                                 libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libgvfscommon.so,libudev.so.1,libpthread.so.0,libc.so.6
+    2047 gvfsd-metadata    0x00007fe7c2e5e000 0x00007fe7c32279a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    2047 gvfsd-metadata    0x00007fe7c3228000 0x00007fe7c3444428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    2047 gvfsd-metadata    0x00007fe7c3681000 0x00007fe7c3991558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    2047 gvfsd-metadata    0x00007fe7c3992000 0x00007fe7c3be4ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    2047 gvfsd-metadata    0x00007fe7c3be5000 0x00007fe7c3f6caa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    2047 gvfsd-metadata    0x00007fe7c4158000 0x00007fe7c4177e60 libudev.so.1                                                 librt.so.1,libpthread.so.0,libc.so.6,ld-linux-x86-64.so.2
+    2240 zeitgeist-datah   0x0000000000400000 0x000000000061fb10 /usr/bin/zeitgeist-datahub                                   libzeitgeist-2.0.so.0,libgtk-3.so.0,libjson-glib-1.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libtelepathy-glib.so.0,libpthread.so.0,libc.so.6
+    2240 zeitgeist-datah   0x00007f8afb5e5000 0x00007f8afb8ed0f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+    2240 zeitgeist-datah   0x00007f8afb8ee000 0x00007f8afbb307e8 /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.9.0             
+    2240 zeitgeist-datah   0x00007f8afce1b000 0x00007f8afd020108 libXfixes.so.3                                               libX11.so.6,libc.so.6
+    2240 zeitgeist-datah   0x00007f8afd231000 0x00007f8afd56ad38 /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0                    
+    2240 zeitgeist-datah   0x00007f8afdf2c000 0x00007f8afe2f59a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    2240 zeitgeist-datah   0x00007f8afe2f6000 0x00007f8afe512428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    2240 zeitgeist-datah   0x00007f8afe935000 0x00007f8afec45558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    2240 zeitgeist-datah   0x00007f8afec46000 0x00007f8afee98ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    2240 zeitgeist-datah   0x00007f8afee99000 0x00007f8aff220aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    2253 zeitgeist-daemo   0x00007f16ee64c000 0x00007f16ee84f0f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+    2253 zeitgeist-daemo   0x00007f16ee850000 0x00007f16eec199a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    2253 zeitgeist-daemo   0x00007f16eec1a000 0x00007f16eee36428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    2253 zeitgeist-daemo   0x00007f16ef10c000 0x00007f16ef41c558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    2253 zeitgeist-daemo   0x00007f16ef41d000 0x00007f16ef66fee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    2253 zeitgeist-daemo   0x00007f16ef670000 0x00007f16ef9f7aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    2263 zeitgeist-fts     0x0000000000400000 0x000000000061fce0 /usr/lib/x86_64-linux-gnu/zeitgeist-fts                      
+    2263 zeitgeist-fts     0x00007f317b0f2000 0x00007f317b30b128 libz.so.1                                                    libc.so.6
+    2263 zeitgeist-fts     0x00007f317b7fe000 0x00007f317bbc79a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    2263 zeitgeist-fts     0x00007f317bbc8000 0x00007f317bddd910 libgcc_s.so.1                                                libc.so.6
+    2263 zeitgeist-fts     0x00007f317bdde000 0x00007f317c15f400 libstdc++.so.6                                               libm.so.6,libc.so.6,ld-linux-x86-64.so.2,libgcc_s.so.1
+    2263 zeitgeist-fts     0x00007f317c160000 0x00007f317c470558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    2263 zeitgeist-fts     0x00007f317c471000 0x00007f317c6c3ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    2263 zeitgeist-fts     0x00007f317c6c4000 0x00007f317ca4baa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    2263 zeitgeist-fts     0x00007f317ca4c000 0x00007f317cc86c18 libdee-1.0.so.4                                              libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libicui18n.so.55,libicuuc.so.55,libpthread.so.0,libc.so.6
+    2263 zeitgeist-fts     0x00007f317cc87000 0x00007f317d0825f0 /usr/lib/x86_64-linux-gnu/libxapian.so.22.7.0                
+    2263 zeitgeist-fts     0x00007f317d083000 0x00007f317d2e1b98 libzeitgeist-2.0.so.0                                        libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libsqlite3.so.0,libpthread.so.0,libc.so.6
+    2414 update-notifier   0x0000000000400000 0x000000000060d998 /usr/bin/update-notifier                                     libgtk-3.so.0,libgdk-3.so.0,libpango-1.0.so.0,libnotify.so.4,libgio-2.0.so.0,libX11.so.6,libgudev-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libappindicator3.so.1,libc.so.6
+    2414 update-notifier   0x00007f5253e61000 0x00007f52540640f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+    2414 update-notifier   0x00007f5254ae7000 0x00007f5254ceebc0 /lib/x86_64-linux-gnu/librt-2.23.so                          
+    2414 update-notifier   0x00007f5255a00000 0x00007f5255c020b8 libXdamage.so.1                                              libX11.so.6,libc.so.6
+    2414 update-notifier   0x00007f5255c03000 0x00007f5255e05098 libXcomposite.so.1                                           libX11.so.6,libc.so.6
+    2414 update-notifier   0x00007f525641e000 0x00007f525663a428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    2414 update-notifier   0x00007f525663b000 0x00007f52569430f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+    2414 update-notifier   0x00007f5256944000 0x00007f5256b867e8 /usr/lib/x86_64-linux-gnu/libfontconfig.so.1.9.0             
+    2414 update-notifier   0x00007f5257092000 0x00007f52572c0e58 libatk-bridge-2.0.so.0                                       libatk-1.0.so.0,libgobject-2.0.so.0,libatspi.so.0,libdbus-1.so.3,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+    2414 update-notifier   0x00007f5257c25000 0x00007f5257e2a108 libXfixes.so.3                                               libX11.so.6,libc.so.6
+    2414 update-notifier   0x00007f525844c000 0x00007f52588159a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    2414 update-notifier   0x00007f5258a24000 0x00007f5258d34558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+    2414 update-notifier   0x00007f5258d35000 0x00007f5258f87ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+    2414 update-notifier   0x00007f5259192000 0x00007f52594cbd38 /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0                    
+    2414 update-notifier   0x00007f52594cc000 0x00007f5259853aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+    4738 systemd-timesyn   0x00005617d099c000 0x00005617d09bf8e8 /lib/lib/systemd/systemd-timesyncd                           libcap.so.2,librt.so.1,libm.so.6,libpthread.so.0,libc.so.6,ld-linux-x86-64.so.2
+    4738 systemd-timesyn   0x00007f31cead6000 0x00007f31cee9f9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    4738 systemd-timesyn   0x00007f31ceea0000 0x00007f31cf0bc428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    7208 systemd-udevd     0x000055b9c6ec5000 0x000055b9c6f3494c /lib/systemd/systemd-udevd                                   libselinux.so.1,librt.so.1,libacl.so.1,libblkid.so.1,libkmod.so.2,libpthread.so.0,libc.so.6,ld-linux-x86-64.so.2
+    7208 systemd-udevd     0x00007fe339eae000 0x00007fe33a2779a0 libc.so.6                                                    ld-linux-x86-64.so.2
+    7208 systemd-udevd     0x00007fe33a278000 0x00007fe33a494428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+    7208 systemd-udevd     0x00007fe33a495000 0x00007fe33a6ab248 libkmod.so.2                                                 libc.so.6
+    7208 systemd-udevd     0x00007fe33a6ac000 0x00007fe33a8ec8e8 libblkid.so.1                                                libuuid.so.1,libc.so.6,ld-linux-x86-64.so.2
+    7208 systemd-udevd     0x00007fe33a8ed000 0x00007fe33aaf4200 libacl.so.1                                                  libattr.so.1,libc.so.6
+    7208 systemd-udevd     0x00007fe33aaf5000 0x00007fe33acfcbc0 librt.so.1                                                   libpthread.so.0,libc.so.6
+    7208 systemd-udevd     0x00007fe33acfd000 0x00007fe33af1e6e0 libselinux.so.1                                              libpcre.so.3,libdl.so.2,libc.so.6,ld-linux-x86-64.so.2
+   14217 gvfsd-network     0x00007f2bd2e70000 0x00007f2bd32399a0 libc.so.6                                                    ld-linux-x86-64.so.2
+   14217 gvfsd-network     0x00007f2bd323a000 0x00007f2bd3456428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+   14217 gvfsd-network     0x00007f2bd3457000 0x00007f2bd3767558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+   14217 gvfsd-network     0x00007f2bd3768000 0x00007f2bd39baee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+   14217 gvfsd-network     0x00007f2bd39bb000 0x00007f2bd3d42aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+   14243 gvfsd-dnssd       0x00007f7fe23da000 0x00007f7fe25f6428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+   14243 gvfsd-dnssd       0x00007f7fe25f7000 0x00007f7fe2907558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+   14400 cupsd             0x00007fa3f077b000 0x00007fa3f0a830f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+   14400 cupsd             0x00007fa3f14d1000 0x00007fa3f16d8bc0 /lib/x86_64-linux-gnu/librt-2.23.so                          
+   14400 cupsd             0x00007fa3f18fb000 0x00007fa3f1afe0f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+   14400 cupsd             0x00007fa3f1d26000 0x00007fa3f20ef9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+   14400 cupsd             0x00007fa3f20f0000 0x00007fa3f230c428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+   14401 cups-browsed      0x00007f0de2a28000 0x00007f0de2c2fbc0 /lib/x86_64-linux-gnu/librt-2.23.so                          
+   14401 cups-browsed      0x00007f0de6179000 0x00007f0de637c0f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+   14401 cups-browsed      0x00007f0de65c9000 0x00007f0de68d10f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+   14401 cups-browsed      0x00007f0de7066000 0x00007f0de742f9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+   14401 cups-browsed      0x00007f0de7430000 0x00007f0de764c428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+   14401 cups-browsed      0x00007f0de789e000 0x00007f0de7bae558 /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2                
+   14401 cups-browsed      0x00007f0de7baf000 0x00007f0de7e01ee8 /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4800.2         
+   14401 cups-browsed      0x00007f0de7e02000 0x00007f0de8189aa8 /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4800.2             
+   14401 cups-browsed      0x00007f0de818a000 0x00007f0de838d168 libavahi-glib.so.1                                           libavahi-common.so.3,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+   14411 dbus              0x00007f415f557000 0x00007f415f75a0f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+   14411 dbus              0x00007f4161301000 0x00007f4161508bc0 /lib/x86_64-linux-gnu/librt-2.23.so                          
+   14411 dbus              0x00007f416172b000 0x00007f4161a330f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+   14411 dbus              0x00007f41625e5000 0x00007f41629ae9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+   14411 dbus              0x00007f41629af000 0x00007f4162bcb428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+   14412 dbus              0x00007f589805f000 0x00007f58982620f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+   14412 dbus              0x00007f5899e09000 0x00007f589a010bc0 /lib/x86_64-linux-gnu/librt-2.23.so                          
+   14412 dbus              0x00007f589a233000 0x00007f589a53b0f8 /lib/x86_64-linux-gnu/libm-2.23.so                           
+   14412 dbus              0x00007f589b0ed000 0x00007f589b4b69a0 libc.so.6                                                    ld-linux-x86-64.so.2
+   14412 dbus              0x00007f589b4b7000 0x00007f589b6d3428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+   14919 main              0x00007fd4613c8000 0x00007fd4617919a0 libc.so.6                                                    ld-linux-x86-64.so.2
+   14919 main              0x00007fd4619ac000 0x00007fd461baf0f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+   14921 main              0x0000000000400000 0x0000000000617d68 /home/sally/Downloads/main                                   libdl.so.2,libz.so.1,libc.so.6
+   14921 main              0x00007f127ef27000 0x00007f127f12c108 libXfixes.so.3                                               libX11.so.6,libc.so.6
+   14921 main              0x00007f127f12d000 0x00007f127f3361d0 libXcursor.so.1                                              libXrender.so.1,libXfixes.so.3,libX11.so.6,libc.so.6
+   14921 main              0x00007f127f3b4000 0x00007f127f5c5718 libnss_files.so.2                                            libc.so.6
+   14921 main              0x00007f127f5c6000 0x00007f127f7d1588 libnss_nis.so.2                                              libnsl.so.1,libnss_files.so.2,libc.so.6
+   14921 main              0x00007f127f7d2000 0x00007f127f9eaa58 libnsl.so.1                                                  libc.so.6
+   14921 main              0x00007f127f9eb000 0x00007f127fbf3460 libnss_compat.so.2                                           libnsl.so.1,libc.so.6
+   14921 main              0x00007f127fe76000 0x00007f12800de1d0 libssl.so.1.0.0                                              libcrypto.so.1.0.0,libc.so.6
+   14921 main              0x00007f12805bb000 0x00007f12807c08d0 /tmp/_MEIlXS6RU/termios.x86_64-linux-gnu.so                  libpthread.so.0,libc.so.6
+   14921 main              0x00007f12807c1000 0x00007f12809c2c48 /tmp/_MEIlXS6RU/Crypto/Cipher/_raw_aesni.so                  libpthread.so.0,libc.so.6
+   14921 main              0x00007f128221e000 0x00007f128241f320 /tmp/_MEIlXS6RU/Crypto/Cipher/_raw_ctr.so                    libpthread.so.0,libc.so.6
+   14921 main              0x00007f1282ce6000 0x00007f1282f0a180 libpng12.so.0                                                libz.so.1,libm.so.6,libc.so.6
+   14921 main              0x00007f1282f0b000 0x00007f1283110098 libXdmcp.so.6                                                libc.so.6
+   14921 main              0x00007f1283111000 0x00007f1283314118 libXau.so.6                                                  libc.so.6
+   14921 main              0x00007f1283315000 0x00007f1283526a98 libXext.so.6                                                 libX11.so.6,libc.so.6
+   14921 main              0x00007f1283527000 0x00007f128374f068 libexpat.so.1                                                libc.so.6
+   14921 main              0x00007f1283750000 0x00007f12839592a8 libXrender.so.1                                              libX11.so.6,libc.so.6
+   14921 main              0x00007f1283c04000 0x00007f1283e252a8 libxcb.so.1                                                  libXau.so.6,libXdmcp.so.6,libc.so.6
+   14921 main              0x00007f1283e26000 0x00007f1284029148 libXss.so.1                                                  libX11.so.6,libXext.so.6,libc.so.6
+   14921 main              0x00007f128402a000 0x00007f128426c7e8 libfontconfig.so.1                                           libfreetype.so.6,libexpat.so.1,libpthread.so.0,libc.so.6
+   14921 main              0x00007f128426d000 0x00007f1284481568 libXft.so.2                                                  libfontconfig.so.1,libfreetype.so.6,libXrender.so.1,libX11.so.6,libc.so.6
+   14921 main              0x00007f1284482000 0x00007f12847bbd38 libX11.so.6                                                  libxcb.so.1,libdl.so.2,libc.so.6
+   14921 main              0x00007f1285231000 0x00007f1285440398 /tmp/_MEIlXS6RU/_tkinter.so                                  libBLT.2.5.so.8.6,libtk8.6.so,libtcl8.6.so,libpthread.so.0,libc.so.6
+   14921 main              0x00007f1285cce000 0x00007f1285ed5608 libffi.so.6                                                  libc.so.6
+   14921 main              0x00007f1286ab7000 0x00007f1286dbf0f8 libm.so.6                                                    libc.so.6,ld-linux-x86-64.so.2
+   14921 main              0x00007f1286dc0000 0x00007f1286fc2108 libutil.so.1                                                 libc.so.6
+   14921 main              0x00007f1286fc3000 0x00007f12871df428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+   14921 main              0x00007f12871e0000 0x00007f128776dfb0 libpython2.7.so.1.0                                          libpthread.so.0,libc.so.6,libz.so.1,libdl.so.2,libutil.so.1,libm.so.6
+   14921 main              0x00007f128776e000 0x00007f1287b379a0 libc.so.6                                                    ld-linux-x86-64.so.2
+   14921 main              0x00007f1287b38000 0x00007f1287d51128 libz.so.1                                                    libc.so.6
+   14921 main              0x00007f1287d52000 0x00007f1287f550f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+   15240 gnome-terminal-   0x0000000000400000 0x000000000064bb98 /usr/lib/gnome-terminal/gnome-terminal-server                libvte-2.91.so.0,libgtk-3.so.0,libgdk-3.so.0,libpango-1.0.so.0,libatk-1.0.so.0,libcairo.so.2,libdconf.so.1,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libuuid.so.1,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007f9ffdf12000 0x00007f9ffe123718 libnss_files.so.2                                            libc.so.6
+   15240 gnome-terminal-   0x00007f9ffe124000 0x00007f9ffe32f588 libnss_nis.so.2                                              libnsl.so.1,libnss_files.so.2,libc.so.6
+   15240 gnome-terminal-   0x00007f9ffe330000 0x00007f9ffe548a58 libnsl.so.1                                                  libc.so.6
+   15240 gnome-terminal-   0x00007f9ffe549000 0x00007f9ffffff010 libicudata.so.55                                             libc.so.6
+   15240 gnome-terminal-   0x00007fa0041ac000 0x00007fa0043b4460 libnss_compat.so.2                                           libnsl.so.1,libc.so.6
+   15240 gnome-terminal-   0x00007fa0053b7000 0x00007fa00561f318 libibus-1.0.so.5                                             libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa005620000 0x00007fa005827450 im-ibus.so                                                   libgtk-3.so.0,libgdk-3.so.0,libpango-1.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libibus-1.0.so.5,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa005828000 0x00007fa005bbbb20 libicuuc.so.55                                               libicudata.so.55,libdl.so.2,libstdc++.so.6,libm.so.6,libgcc_s.so.1,libc.so.6
+   15240 gnome-terminal-   0x00007fa005bbc000 0x00007fa005f769b8 libxml2.so.2                                                 libdl.so.2,libicuuc.so.55,libz.so.1,liblzma.so.5,libm.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa005f77000 0x00007fa0061b1278 libcroco-0.6.so.3                                            libglib-2.0.so.0,libxml2.so.2,libc.so.6
+   15240 gnome-terminal-   0x00007fa0061b2000 0x00007fa0063e8c08 librsvg-2.so.2                                               libgdk_pixbuf-2.0.so.0,libgio-2.0.so.0,libpangocairo-1.0.so.0,libpango-1.0.so.0,libgobject-2.0.so.0,libcairo.so.2,libcroco-0.6.so.3,libglib-2.0.so.0,libxml2.so.2,libm.so.6,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa006401000 0x00007fa006603100 libpixbufloader-svg.so                                       librsvg-2.so.2,libgdk_pixbuf-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa006787000 0x00007fa00698c298 libpixbufloader-png.so                                       libgdk_pixbuf-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpng12.so.0,libm.so.6,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa00698d000 0x00007fa006b95010 libogg.so.0                                                  libc.so.6
+   15240 gnome-terminal-   0x00007fa006b96000 0x00007fa006dc0140 libvorbis.so.0                                               libm.so.6,libogg.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa006dc1000 0x00007fa006fca1b0 libltdl.so.7                                                 libdl.so.2,libc.so.6
+   15240 gnome-terminal-   0x00007fa006fcb000 0x00007fa0071df230 libtdb.so.1                                                  libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa0071e0000 0x00007fa0073e81b8 libvorbisfile.so.3                                           libvorbis.so.0,libogg.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa0073e9000 0x00007fa0075f92f0 libcanberra.so.0                                             libvorbisfile.so.3,libtdb.so.1,libltdl.so.7,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa0075fa000 0x00007fa0077fe200 libcanberra-gtk3.so.0                                        libgtk-3.so.0,libgdk-3.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libX11.so.6,libcanberra.so.0,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa00c049000 0x00007fa00c24e310 libcanberra-gtk3-module.so                                   libgtk-3.so.0,libgdk-3.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libX11.so.6,libgmodule-2.0.so.0,libcanberra-gtk3.so.0,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa00ca50000 0x00007fa00cc8bb18 libgvfscommon.so                                             libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa00cc8c000 0x00007fa00cebe208 libgvfsdbus.so                                               libgvfscommon.so,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa00d6c0000 0x00007fa00d8cc5f8 /usr/lib/x86_64-linux-gnu/gio/modules/libdconfsettings.so    libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa00d8cd000 0x00007fa00dadd5c0 libunity-gtk3-parser.so.0                                    libgtk-3.so.0,libgdk-3.so.0,libgdk_pixbuf-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa00dade000 0x00007fa00dce4308 libunity-gtk-module.so                                       libgtk-3.so.0,libgdk-3.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libX11.so.6,libunity-gtk3-parser.so.0,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa00e6a4000 0x00007fa00e8b7238 libgpg-error.so.0                                            libc.so.6
+   15240 gnome-terminal-   0x00007fa00e8b8000 0x00007fa00eb982c0 libgcrypt.so.20                                              libgpg-error.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa00eb99000 0x00007fa00edba088 liblzma.so.5                                                 libdl.so.2,libc.so.6
+   15240 gnome-terminal-   0x00007fa00edbb000 0x00007fa00efe3068 libkj-0.5.3.so                                               libpthread.so.0,libstdc++.so.6,libc.so.6,ld-linux-x86-64.so.2,libgcc_s.so.1
+   15240 gnome-terminal-   0x00007fa00efe4000 0x00007fa00f1fb400 libboost_filesystem.so.1.58.0                                libboost_system.so.1.58.0,libstdc++.so.6,libgcc_s.so.1,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa00f1fc000 0x00007fa00f4210b0 libgraphite2.so.3                                            libc.so.6
+   15240 gnome-terminal-   0x00007fa00f422000 0x00007fa00f627098 libXdmcp.so.6                                                libc.so.6
+   15240 gnome-terminal-   0x00007fa00f628000 0x00007fa00f82b118 libXau.so.6                                                  libc.so.6
+   15240 gnome-terminal-   0x00007fa00f82c000 0x00007fa00fa330a8 libdatrie.so.1                                               libc.so.6
+   15240 gnome-terminal-   0x00007fa00fa34000 0x00007fa00fc49910 libgcc_s.so.1                                                libc.so.6
+   15240 gnome-terminal-   0x00007fa00fc4a000 0x00007fa00ffcb400 libstdc++.so.6                                               libm.so.6,libc.so.6,ld-linux-x86-64.so.2,libgcc_s.so.1
+   15240 gnome-terminal-   0x00007fa00ffcc000 0x00007fa0101fc230 libprotobuf-lite.so.9                                        libpthread.so.0,libstdc++.so.6,libm.so.6,libc.so.6,libgcc_s.so.1
+   15240 gnome-terminal-   0x00007fa0101fd000 0x00007fa010400100 libboost_system.so.1.58.0                                    libstdc++.so.6,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa010401000 0x00007fa010609180 libmircore.so.1                                              libstdc++.so.6,libgcc_s.so.1,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa01060a000 0x00007fa010891020 libcapnp-0.5.3.so                                            libkj-0.5.3.so,libstdc++.so.6,libc.so.6,libgcc_s.so.1
+   15240 gnome-terminal-   0x00007fa010892000 0x00007fa010b033c0 libmirprotobuf.so.3                                          libprotobuf-lite.so.9,libstdc++.so.6,libgcc_s.so.1,libc.so.6
+   15240 gnome-terminal-   0x00007fa010b04000 0x00007fa010d4a888 libmircommon.so.7                                            libmircore.so.1,libboost_system.so.1.58.0,libboost_filesystem.so.1.58.0,libdl.so.2,libcapnp-0.5.3.so,libstdc++.so.6,libgcc_s.so.1,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa010d4b000 0x00007fa010f73068 libexpat.so.1                                                libc.so.6
+   15240 gnome-terminal-   0x00007fa010f74000 0x00007fa0111d1850 libharfbuzz.so.0                                             libglib-2.0.so.0,libfreetype.so.6,libgraphite2.so.3,libc.so.6
+   15240 gnome-terminal-   0x00007fa0111d2000 0x00007fa01141d2b0 libdbus-1.so.3                                               libpthread.so.0,libsystemd.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa01141e000 0x00007fa01164c398 libatspi.so.0                                                libgobject-2.0.so.0,libX11.so.6,libdbus-1.so.3,libglib-2.0.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa01164d000 0x00007fa0118500f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+   15240 gnome-terminal-   0x00007fa011851000 0x00007fa011ad01c0 libgmp.so.10                                                 libc.so.6
+   15240 gnome-terminal-   0x00007fa011ad1000 0x00007fa011d032c0 libhogweed.so.4                                              libnettle.so.6,libgmp.so.10,libc.so.6
+   15240 gnome-terminal-   0x00007fa011d04000 0x00007fa011f39090 libnettle.so.6                                               libc.so.6
+   15240 gnome-terminal-   0x00007fa011f3a000 0x00007fa01214c408 libtasn1.so.6                                                libc.so.6
+   15240 gnome-terminal-   0x00007fa01214d000 0x00007fa01237f0f0 libidn.so.11                                                 libc.so.6
+   15240 gnome-terminal-   0x00007fa012380000 0x00007fa0125e3790 libp11-kit.so.0                                              libffi.so.6,libdl.so.2,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa0125e4000 0x00007fa012853108 libpcre.so.3                                                 libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa012854000 0x00007fa012a5b608 libffi.so.6                                                  libc.so.6
+   15240 gnome-terminal-   0x00007fa012a5c000 0x00007fa012c76a48 libresolv.so.2                                               libc.so.6
+   15240 gnome-terminal-   0x00007fa012c77000 0x00007fa012e986e0 libselinux.so.1                                              libpcre.so.3,libdl.so.2,libc.so.6,ld-linux-x86-64.so.2
+   15240 gnome-terminal-   0x00007fa012e99000 0x00007fa0130a22a8 libXrender.so.1                                              libX11.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa0130a3000 0x00007fa0132c42a8 libxcb.so.1                                                  libXau.so.6,libXdmcp.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa0132c5000 0x00007fa0134ce068 libxcb-render.so.0                                           libxcb.so.1,libc.so.6
+   15240 gnome-terminal-   0x00007fa0134cf000 0x00007fa0136d2068 libxcb-shm.so.0                                              libxcb.so.1,libc.so.6
+   15240 gnome-terminal-   0x00007fa0136d3000 0x00007fa0138f7180 libpng12.so.0                                                libz.so.1,libm.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa0138f8000 0x00007fa013ba11e8 libfreetype.so.6                                             libz.so.1,libpng12.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa013ba2000 0x00007fa013e49148 libpixman-1.so.0                                             libm.so.6,libpthread.so.0,libc.so.6,ld-linux-x86-64.so.2
+   15240 gnome-terminal-   0x00007fa013e4a000 0x00007fa014052978 libthai.so.0                                                 libdatrie.so.1,libc.so.6
+   15240 gnome-terminal-   0x00007fa014053000 0x00007fa01425abc0 librt.so.1                                                   libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa01425b000 0x00007fa01446ca98 libXext.so.6                                                 libX11.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa01446d000 0x00007fa014713760 libmirclient.so.9                                            libxkbcommon.so.0,libmircommon.so.7,libmirprotobuf.so.3,libdl.so.2,libcapnp-0.5.3.so,libmircore.so.1,libboost_system.so.1.58.0,libprotobuf-lite.so.9,libstdc++.so.6,libgcc_s.so.1,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa014714000 0x00007fa0149224c8 libwayland-client.so.0                                       libffi.so.6,librt.so.1,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa014923000 0x00007fa014b24038 libwayland-egl.so.1                                          libc.so.6
+   15240 gnome-terminal-   0x00007fa014b25000 0x00007fa014d2c1f0 libwayland-cursor.so.0                                       libwayland-client.so.0,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa014d2d000 0x00007fa014f6b178 libxkbcommon.so.0                                            libc.so.6
+   15240 gnome-terminal-   0x00007fa014f6c000 0x00007fa01516e0b8 libXdamage.so.1                                              libX11.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa01516f000 0x00007fa015371098 libXcomposite.so.1                                           libX11.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa015372000 0x00007fa01557b1d0 libXcursor.so.1                                              libXrender.so.1,libXfixes.so.3,libX11.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa01557c000 0x00007fa0157861a8 libXrandr.so.2                                               libXext.so.6,libXrender.so.1,libX11.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa015787000 0x00007fa015989128 libXinerama.so.1                                             libX11.so.6,libXext.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa01598a000 0x00007fa015bcc7e8 libfontconfig.so.1                                           libfreetype.so.6,libexpat.so.1,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa015bcd000 0x00007fa015de2908 libpangoft2-1.0.so.0                                         libpango-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libharfbuzz.so.0,libfontconfig.so.1,libfreetype.so.6,libm.so.6,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa015de3000 0x00007fa0160d7938 libepoxy.so.0                                                libdl.so.2,libc.so.6
+   15240 gnome-terminal-   0x00007fa0160d8000 0x00007fa016306e58 libatk-bridge-2.0.so.0                                       libatk-1.0.so.0,libgobject-2.0.so.0,libatspi.so.0,libdbus-1.so.3,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa016307000 0x00007fa0165286b0 libgdk_pixbuf-2.0.so.0                                       libgmodule-2.0.so.0,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libm.so.6,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa016529000 0x00007fa016731160 libcairo-gobject.so.2                                        libcairo.so.2,libgobject-2.0.so.0,libglib-2.0.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa016732000 0x00007fa016937108 libXfixes.so.3                                               libX11.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa016938000 0x00007fa016b47288 libXi.so.6                                                   libX11.so.6,libXext.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa016b48000 0x00007fa016e81d38 libX11.so.6                                                  libxcb.so.1,libdl.so.2,libc.so.6
+   15240 gnome-terminal-   0x00007fa016e82000 0x00007fa017085198 libgmodule-2.0.so.0                                          libdl.so.2,libglib-2.0.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa017086000 0x00007fa01738e0f8 libm.so.6                                                    libc.so.6,ld-linux-x86-64.so.2
+   15240 gnome-terminal-   0x00007fa01738f000 0x00007fa0176be180 libgnutls.so.30                                              libz.so.1,libp11-kit.so.0,libidn.so.11,libtasn1.so.6,libnettle.so.6,libhogweed.so.4,libgmp.so.10,libc.so.6
+   15240 gnome-terminal-   0x00007fa0176bf000 0x00007fa0178d8128 libz.so.1                                                    libc.so.6
+   15240 gnome-terminal-   0x00007fa0178d9000 0x00007fa017ae5638 libpangocairo-1.0.so.0                                       libpango-1.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libcairo.so.2,libfontconfig.so.1,libm.so.6,libpangoft2-1.0.so.0,libfreetype.so.6,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa017ae6000 0x00007fa017eaf9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+   15240 gnome-terminal-   0x00007fa017eb0000 0x00007fa0180cc428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+   15240 gnome-terminal-   0x00007fa0180cd000 0x00007fa0182d1170 libuuid.so.1                                                 libc.so.6,ld-linux-x86-64.so.2
+   15240 gnome-terminal-   0x00007fa0182d2000 0x00007fa0185e2558 libglib-2.0.so.0                                             libpcre.so.3,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa0185e3000 0x00007fa018835ee8 libgobject-2.0.so.0                                          libglib-2.0.so.0,libffi.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa018836000 0x00007fa018bbdaa8 libgio-2.0.so.0                                              libgobject-2.0.so.0,libgmodule-2.0.so.0,libglib-2.0.so.0,libz.so.1,libselinux.so.1,libresolv.so.2,libc.so.6
+   15240 gnome-terminal-   0x00007fa018bbe000 0x00007fa018dca5d8 libdconf.so.1                                                libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa018dcb000 0x00007fa0190de4c0 libcairo.so.2                                                libpthread.so.0,libpixman-1.so.0,libfontconfig.so.1,libfreetype.so.6,libpng12.so.0,libxcb-shm.so.0,libxcb-render.so.0,libxcb.so.1,libXrender.so.1,libX11.so.6,libXext.so.6,libz.so.1,librt.so.1,libm.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa0190df000 0x00007fa0193037f8 libatk-1.0.so.0                                              libgobject-2.0.so.0,libglib-2.0.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa019304000 0x00007fa01954f758 libpango-1.0.so.0                                            libgobject-2.0.so.0,libglib-2.0.so.0,libthai.so.0,libm.so.6,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa019550000 0x00007fa01982ac50 libgdk-3.so.0                                                libpangocairo-1.0.so.0,libpango-1.0.so.0,libgdk_pixbuf-2.0.so.0,libcairo-gobject.so.2,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libfontconfig.so.1,libXinerama.so.1,libXi.so.6,libXrandr.so.2,libXcursor.so.1,libXcomposite.so.1,libXdamage.so.1,libXfixes.so.3,libxkbcommon.so.0,libwayland-cursor.so.0,libwayland-egl.so.1,libwayland-client.so.0,libmirclient.so.9,libX11.so.6,libXext.so.6,libcairo.so.2,libepoxy.so.0,libm.so.6,librt.so.1,libc.so.6
+   15240 gnome-terminal-   0x00007fa01982b000 0x00007fa01a1598f0 libgtk-3.so.0                                                libgdk-3.so.0,libgmodule-2.0.so.0,libpangocairo-1.0.so.0,libX11.so.6,libXi.so.6,libXfixes.so.3,libcairo-gobject.so.2,libcairo.so.2,libgdk_pixbuf-2.0.so.0,libatk-1.0.so.0,libatk-bridge-2.0.so.0,libepoxy.so.0,libpangoft2-1.0.so.0,libpango-1.0.so.0,libfontconfig.so.1,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libm.so.6,libpthread.so.0,libc.so.6
+   15240 gnome-terminal-   0x00007fa01a15a000 0x00007fa01a3a7148 libvte-2.91.so.0                                             libgtk-3.so.0,libgdk-3.so.0,libpangocairo-1.0.so.0,libpango-1.0.so.0,libatk-1.0.so.0,libcairo.so.2,libgio-2.0.so.0,libgobject-2.0.so.0,libglib-2.0.so.0,libz.so.1,libgnutls.so.30,libm.so.6,libc.so.6
+   15240 gnome-terminal-   0x00007fa01a515000 0x00007fa01a599080 libsystemd.so.0                                              libselinux.so.1,librt.so.1,liblzma.so.5,libgcrypt.so.20,libpthread.so.0,libc.so.6,ld-linux-x86-64.so.2
+   15246 bash              0x0000000000400000 0x0000000000702858 /bin/bash                                                    libtinfo.so.5,libdl.so.2,libc.so.6
+   15246 bash              0x00007f825d218000 0x00007f825d429718 libnss_files.so.2                                            libc.so.6
+   15246 bash              0x00007f825d42a000 0x00007f825d635588 libnss_nis.so.2                                              libnsl.so.1,libnss_files.so.2,libc.so.6
+   15246 bash              0x00007f825d636000 0x00007f825d84ea58 libnsl.so.1                                                  libc.so.6
+   15246 bash              0x00007f825d84f000 0x00007f825da57460 libnss_compat.so.2                                           libnsl.so.1,libc.so.6
+   15246 bash              0x00007f825e417000 0x00007f825e7e09a0 libc.so.6                                                    ld-linux-x86-64.so.2
+   15246 bash              0x00007f825e7e1000 0x00007f825e9e40f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+   15246 bash              0x00007f825e9e5000 0x00007f825ec0dcc0 libtinfo.so.5                                                libc.so.6
+   15294 sudo              0x00005577af9a9000 0x00005577afbcb528 /usr/bin/sudo                                                libaudit.so.1,libselinux.so.1,libutil.so.1,libsudo_util.so.0,libc.so.6
+   15294 sudo              0x00007f40e86e7000 0x00007f40e88ea130 libpam_misc.so.0                                             libpam.so.0,libc.so.6
+   15294 sudo              0x00007f40e88eb000 0x00007f40e8af2bc0 librt.so.1                                                   libpthread.so.0,libc.so.6
+   15294 sudo              0x00007f40e8af3000 0x00007f40e8cfd2e0 pam_gnome_keyring.so                                         libselinux.so.1,libpam.so.0,libc.so.6
+   15294 sudo              0x00007f40e8cfe000 0x00007f40e8f000e8 pam_umask.so                                                 libpam.so.0,libc.so.6
+   15294 sudo              0x00007f40e8f01000 0x00007f40e9102040 pam_permit.so                                                libpam.so.0,libc.so.6
+   15294 sudo              0x00007f40e9103000 0x00007f40e9304028 pam_deny.so                                                  libc.so.6
+   15294 sudo              0x00007f40e9305000 0x00007f40e953c1e0 libcrypt.so.1                                                libc.so.6
+   15294 sudo              0x00007f40e953d000 0x00007f40e97573e0 pam_unix.so                                                  libpam.so.0,libcrypt.so.1,libselinux.so.1,libnsl.so.1,libc.so.6
+   15294 sudo              0x00007f40e9758000 0x00007f40e995b0d8 pam_env.so                                                   libpam.so.0,libc.so.6
+   15294 sudo              0x00007f40e995c000 0x00007f40e9b691e8 libpam.so.0                                                  libaudit.so.1,libdl.so.2,libc.so.6
+   15294 sudo              0x00007f40e9b6a000 0x00007f40e9db76e8 sudoers.so                                                   libaudit.so.1,libpam.so.0,libsudo_util.so.0,libc.so.6
+   15294 sudo              0x00007f40e9db8000 0x00007f40e9fc9718 libnss_files.so.2                                            libc.so.6
+   15294 sudo              0x00007f40e9fca000 0x00007f40ea1d5588 libnss_nis.so.2                                              libnsl.so.1,libnss_files.so.2,libc.so.6
+   15294 sudo              0x00007f40ea1d6000 0x00007f40ea3eea58 libnsl.so.1                                                  libc.so.6
+   15294 sudo              0x00007f40ea3ef000 0x00007f40ea5f7460 libnss_compat.so.2                                           libnsl.so.1,libc.so.6
+   15294 sudo              0x00007f40eafb7000 0x00007f40eb1d3428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2
+   15294 sudo              0x00007f40eb1d4000 0x00007f40eb3d70f0 libdl.so.2                                                   libc.so.6,ld-linux-x86-64.so.2
+   15294 sudo              0x00007f40eb3d8000 0x00007f40eb647108 libpcre.so.3                                                 libpthread.so.0,libc.so.6
+   15294 sudo              0x00007f40eb648000 0x00007f40eba119a0 libc.so.6                                                    ld-linux-x86-64.so.2
+   15294 sudo              0x00007f40eba12000 0x00007f40ebc253a8 libsudo_util.so.0                                            libdl.so.2,libc.so.6
+   15294 sudo              0x00007f40ebc26000 0x00007f40ebe28108 libutil.so.1                                                 libc.so.6
+   15294 sudo              0x00007f40ebe29000 0x00007f40ec04a6e0 libselinux.so.1                                              libpcre.so.3,libdl.so.2,libc.so.6,ld-linux-x86-64.so.2
+   15294 sudo              0x00007f40ec04b000 0x00007f40ec271228 libaudit.so.1                                                libc.so.6
+   15294 sudo              0x00007f40ec435000 0x00007f40ec478e61 pam_systemd.so                                               libselinux.so.1,librt.so.1,libpam.so.0,libpam_misc.so.0,libpthread.so.0,libc.so.6,ld-linux-x86-64.so.2
+   15297 insmod            0x000055bcf860c000 0x000055bcf88303f8 /bin/kmod                                                    libc.so.6
+   15297 insmod            0x00007f0dc8c45000 0x00007f0dc900e9a0 libc.so.6                                                    ld-linux-x86-64.so.2
+   15298 (tmpfiles)        0x00007f562da31000 0x00007f562dc4d428 libpthread.so.0                                              libc.so.6,ld-linux-x86-64.so.2

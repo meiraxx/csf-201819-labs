@@ -1,0 +1,218 @@
+---report---
+
+"md5sum *"
+md5 | filename
+55fd5b1d42072955e15769b55a390400  cathedral.png
+72eab63334dcd0f73418e32999b71f05  compress.py
+c6596b360ac97889c4f2d68ba6787f92  munich.txt
+deb345aea6cdb82ca4636c0811c292df  oktoberfest.png
+b3baa737b818db4f52a681f0cf8d440c  online_banking.zip
+a6e56c4d34d9a541b622b74c954c3fc9  snow.bmp
+f1ea1beaa6a838d16b4d457c6fe68fd0  street.png
+13c85b20b6b1e481a32700f26818333e  wursten.png
+
+Este é o primeiro passo antes de começarmos a analisar os ficheiros, para além de fazer um backup
+
+::: FILE snow.bmp :::
+strings output:
+Ich sende Ihnen f
+nf Dateien: (1) Drohne A Pl
+ne, (2) Drohne B Pl
+ne, (3) technische Spezifikationen, (4) Passw
+rter von DroneX Dateiservern
+
+We found the german text using the strings command, and erased the '\n' so it would make sense. Actually, these weren't "\n"'s, the strings command found a non-printable ascii character so it put it there, but they're actually utf-8 characters (vowels with diaeresis).
+
+german correction:
+Ich sende Ihnen fünf Dateien: (1) Drohne A Pläne, (2) Drohne B Pläne, (3) technische Spezifikationen, (4) Passwörter von DroneX Dateiservern
+
+english translated:
+I send you five files: (1) Drone A Plans, (2) Drone B Plans, (3) Technical Specifications, (4) Passwords of DroneX File Servers
+
+
+::: FILE munich.txt :::
+
+Normal text... it has a sort of menu there (in the end of the file). Oh! It's Wikipedia's menu, nevermind! We found this article in wikipedia right after that: https://en.wikipedia.org/wiki/Munich
+
+Our theory is that it may be a dictionary.
+It was a dictionary. We used it to crack online_banking.zip.
+
+
+::: FILE cathedral.png :::
+...
+
+::: FILE street.png :::
+...
+
+::: FILE oktoberfest.png :::
+...
+
+::: FILE wursten.png :::
+...
+
+::: FILE online_banking.zip :::
+At first, we simply tried to extract it with the linux file explorer (right-click, extract), and we verified that it has 2 files there: "drone-A.bmp" and "online_banking.docx". Unfortunately, this zip file is protected by a password. We're now going to analyze the compress.py file to find out if this was the program used to compress online_banking.zip and how it works. We suspect munich.txt file may have been used has a dictionary to zip it, so if that's true we can use it to unzip it, using for example the fcrackzip tool. We are going to try to use 'munich.txt' as a dictionary (line by line). We did the following:
+
+cp munich.txt munich-copy.txt
+sed -i 's/\ /\n/g' munich-copy.txt
+fcrackzip -u -D -p munich-copy.txt online_banking.zip
+
+The last command resulted in the output: "PASSWORD FOUND!!!!: pw == Stadelheim"
+
+So, we unzip online_banking.zip using that password, obtaining the previously mentioned files. We run md5sum on them and do a backup:
+05029f0ae6af62ca3350f5b094584b22  drone-A.bmp
+b70702822417bd39a7997a0f8c73941f  online_banking.docx
+
+Then, we do the following:
+cp online_banking.docx online_banking-copy.docx
+unzip online_banking-copy.docx
+subl word/document.xml		(we used sublime because it beautifies the xml text, making it easier to find what we want)
+
+We found a "Password: 51782", we don't know what it is for yet, but we will know.
+
+So now, we are going to analyze drone-A.bmp. We did 'strings drone-A.bmp' and found an "IEND" keyword on the end of the file. We noticed before that the png file format is the one that uses this keyword in the end, so we can safely assume that there might be a png file hidden within this bmp file. 
+
+png Magic-Number: 89 50 4E 47 0D 0A 1A 0A
+We didn't find this magic number in the .bmp file...
+However, we compared this bmp file to a normal png file, and found that the header tag occupied exactly 4 bytes on the same memory positions on both files. We also noted that the first 8 bytes of drone-A.bmp partially matched the first 8 bytes of a normal png file (Magic Number). So, we used "hexeditor" command to edit these bytes and change them exactly into the png magic number. We saved the file with the name 'drone-A-corrected.png' and opened it, finding the drone A plans.
+
+We then ran the md5sum on the modified file too:
+d99f500968d444b5e0a1c9fd1dd69274  drone-A-corrected.png
+
+
+::: FILE compress.py (compress.pyc) :::   
+
+Corremos o comando file no ficheiro 'compress.py' e descobrimos que, na realidade, é um .pyc (python 2.7 byte-compiled). A partir daqui, decidimos tentar descompilar este .pyc de forma a obter um .py, de forma a que consigamos ver a lógica por detrás do programa. Para esse efeito, instalámos uma library chamada 'uncompyle6' através do comando 'pip install uncompyle6'. De seguida, corremos o comando 'mv compress.py compress.pyc' de forma a obter o file format correto, e de seguida 'uncompyle6 compress.pyc > compress.py'. Pelos vistos, estávamos errados quanto à finalidade do 'compress.py'; ele não serve para comprimir ficheiros para zip, mas na verdade serve para esconder informação nos bits menos significativos de ficheiro '.png'. Corremos o 'md5sum' de novo em ambos os ficheiros, de forma a verificar que o compress.pyc mantém o valor anterior (mantem pois apenas mudámos o filename) e registar o valor do programa descompilado: 
+*md5sum*
+72eab63334dcd0f73418e32999b71f05  compress.pyc
+c641e7e24abda594f0b9ba70f4e2efd6  compress.py
+
+Temos então de arranjar uma maneira de extrair a informação dos ficheiros PNG baseando-nos na lógica do compress.py.
+Copiámos uma imagem PNG para a directoria onde se encontra o ficheiro compress.py. De seguida criámos um ficheiro .txt com o conteúdo "segredo". Finalmente corremos o programa python compress.py. Este programa levava como argumentos a imagem na qual vai ser escondida o ficheiro que pretendemos ocultar, o ficheiro que pretendemos ocultar, e uma password para a compressão, todos nesta ordem.
+
+A compressão foi efectuada com sucesso e comparando o ficheiro recentemente comprido, gerado pelo programa, com o original, a olho não não vimos qualquer diferença nos píxeis da imagem.
+
+De seguida partimos para a geração de um ficheiro python de forma a descomprimir a imagem gerada e o ficheiro lá escondido. De forma a fazer isto, decidimos primeiro perceber a lógica por detrás do programa compress.py. Após tratar os dados da imagem, a função embed() chama a função decompose() com os dados em plain text. Por sua vez, a função decompose() agarra no payload a esconder e transforma-o num array, começando com o file size primeiro, que é mapeado nas primeiras 4 posições. Por exemplo, se o file size for 2200, então o array começa por [152,8,0,0], uma vez que 2200 em hexadecimal é 0x0898 (0x98=152; 0x08=8), pois é posto no array por ordem reversa (little-endian).
+
+Após este mapeamento, o conteúdo do payload é posto no array em decimal de acordo com a sua tradução em ASCII, na ordem normal. Finalmente, é corrido um ciclo que transforma este array de números decimais num array 8 vezes maior, uma vez que cada número decimal é traduzido para o seu equivalente em binário, utilizando 8 bits (1 byte). Por exemplo, uma mensagem "s" é traduzida para o array inicial [1, 0, 0, 0,115], sendo depois transformado no array binário que vai ser retornado pela função decompose(), isto é: [0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,1].
+
+Após esta função, é feito um "padding" (com 0s) de forma a que o tamanho do array seja múltiplo de 6. Caso o tamanho do payload seja maior do que o tamanho máximo permitido (calculado de acordo com o comprimento e largura da imagem), então não é possível esconder a mensagem e retorna um erro. Verificou-se que a password tem que ser um inteiro pois é feita uma comparação entre a variável 'displacement', que é um inteiro, com a password, impedindo então que a password seja algo que não um inteiro. Tendo isto a conta, temos cada vez mais a certeza de que a password que encontrámos no ficheiro online_banking.docx ("51782") foi, realmente, a password utilizada para esconder uma mensagem dentro de uma destas imagens PNG.
+
+Ao mesmo tempo, sabemos que o segredo para determinar as posições nas quais o payload é escondido estará nesta variável chamada 'displacement'. A variável 'conv' tem a nossa imagem original .png convertida para um mapping de RGBA. A imagem resultante do algoritmo LSB aplicado à imagem original vai ser guardado na variável 'steg_img', a qual é inicialmente inicializada sem nada, mas é depois populada tendo em conta a imagem original (variável 'conv') e o payload que queremos esconder (variável 'v'), que é inserido no RGBA utilizando a função auxiliar set_bit(). Cada elemento do array 'v' vai ser passado a esta função (variável 'x') num loop e o valor da mask varia, sequencialmente, entre 1 (00000001) e 2 (00000010), servindo como máscaras para fazer set ao último e penúltimo bits, respetivamente. Quanto à variável 'n', é feito um NAND com a máscara de forma a pôr a 0 os bits nas posições definidas pela máscara e, por fim, o elemento nessa posição é set a 0 ou 1 dependendo do seu valor real. Confirmámos então que este algoritmo não é um LSB regular, ele utiliza o último e penúltimo bit para esconder informação (na ordem correta). Regista-se também que a informação é guardada sequencialmente a partir do momento em que o displacement iguala à password (mod 13). 
+Podemos concluir então que a password (mod 13) é o displacement, que há-de corresponder ao 'width' inicial. Caso o segredo ultrapasse o limite superior do 'width', é feito um incremento na 'height' de forma a poder escrever mais dados. É possível a partir do displacement inicial determinar exatamente em que bit começa a mensagem (...).
+Para além disto, os bits do pixel são set 6 de cada vez (último e penúltimo do Red, Green e Blue, o alpha mantém-se). Portanto, sabemos que são guardados 6 bits de informação relevante por cada pixel. Sabendo mais tarde onde a informação é guardada e que esta é guardada seguindo esta lógica dentro de cada pixel, e sabendo também que esta é guardada sequencialmente entre pixeis, podemos recuperar a informação. 
+De acordo com a referência "https://en.wikipedia.org/wiki/Portable_Network_Graphics#File_header", o PNG tem apenas 8 bytes de header, sendo que estes são também o seu Magic Number. Por outras palavras, o Magic Number é a única informação presente no file header de um PNG. Sabendo isso, podemos descobrir o bit inicial com base na width e height que nos é dada.
+
+Vamos fazer uma simulação manual com uma imagem completamente preta. Correu-se na cmd o seguinte: "python compress.py black.png mensagem.txt 123456", com alguns prints auxiliares para nos informar acerca da width e height, e dar-nos algumas pistas de como calcular efetivamente o offset específico dos dados em bits.
+Ok, entendemos o que se passa no compress. Sabemos agora que podemos começar a ler a partir do fim do header (a partir do 8º byte, exclusive), e lemos 32 bits distribuídos nos penúltimo e último valor do R,G e B de cada pixel subsequente. Isto dá-nos a possibilidade de calcular o size que temos que ler daqui para a frente (valor lido em bits subtraído por 32 bits). A título de exemplo, se tivermos que ler 8 bits (1 byte), temos que ler 1 pixel para obter 6 bits, e um terço de outro pixel para obter mais 2 bits, perfazendo a informação inteira: os 8 bits. Também relacionado, 16 bytes numa imagem são usados para guardar informação relativa a 4 bytes do tamanho informação segredo (2 bits por cada byte, na ordem reversa).
+
+Se num pixel conseguimos guardar 6 bits, então, por exemplo, para guardar um segredo com 7 bytes (caracteres), precisamos de 7*8/6 pixeis, arredondando por excesso. Mas, isto é irrelavante, basta-nos saber que temos que ir buscar 7*8 bits, de pixel em pixel.
+
+Vamos agora então desenvolver um script chamado extract.py que irá buscar a informação automaticamente, baseando-se nos conceitos acima referidos.
+Ok. Com o script desenvolvido ('extract.py'), conseguimos desenvolver um programa que dado um png e uma password, consegue obter o segredo!
+Muito bem, após isto tudo, decidimos organizar a directoria pois havia muitos ficheiros que não eram os iniciais. Corremos os seguintes comandos:
+mv white.png black.png mensagem.txt compress.py extract.py RGBA_convert.py munich-copy.txt auxiliary_files/
+mv online_banking/ auxiliary_files/
+rm original.txt modified.txt
+
+Depois, reconfirmámos os md5's para ter a certeza que não alterámos nada durante a nossa análise:
+55fd5b1d42072955e15769b55a390400  cathedral.png
+72eab63334dcd0f73418e32999b71f05  compress.pyc
+c6596b360ac97889c4f2d68ba6787f92  munich.txt
+deb345aea6cdb82ca4636c0811c292df  oktoberfest.png
+b3baa737b818db4f52a681f0cf8d440c  online_banking.zip
+a6e56c4d34d9a541b622b74c954c3fc9  snow.bmp
+f1ea1beaa6a838d16b4d457c6fe68fd0  street.png
+13c85b20b6b1e481a32700f26818333e  wursten.png
+
+Verificam-se! Não modificámos nada até agora (excepto a extensão do ficheiro 'compress', de .py para .pyc, mas isso era o mais correto a fazer tendo em conta que era um ficheiro com código python compilado)
+
+Agora que temos a certeza que está tudo bem, vamos proceder e correr o programa 'extract.py' nos 4 PNGs que nos são dados, com a password que tínhamos encontrado dentro do ficheiro 'online_banking.docx' presente dentro do ficheiro 'online_banking.zip': '51782'.
+
+Depois, corremos os seguintes comandos:
+
+./extract.py ../cathedral.png 51782 > cathedral.txt
+./extract.py ../wursten.png 51782 > wursten.txt
+./extract.py ../oktoberfest.png 51782 > oktoberfest.txt
+./extract.py ../street.png 51782 > street.txt
+------------------------------------
+strings wursten.txt | head -n 10
+::: OUTPUT :::
+ESS PASSWORDS FOR DRONEX SERVERS
+SERVER 1: Sr!_01llxt
+SERVER 2: p_GEtKl4dA
+alhu
+r\',
+zv$S"
+zqn5\
+`x:c
+=by>_
+aei&
+::: Interpretação :::
+Descobrimos que 2 valores de password a referirem-se ao "SERVER 1" e "SERVER 2". Esta informação refere-se muito provavelmente ao indice 4 do que o responsável disse que ia enviar (as passwords dos servidores de ficheiros da DroneX) de acordo com o ficheiro 'snow.bmp'.
+
+------------------------------------
+strings oktoberfest.txt | head -n 10
+::: OUTPUT :::
+IHDR
+iCCPICC Profile
+8H]sM
+w",+D
+'f~|`
+b.pvRX
+8CfR
+7xQ'X
+@4X	
+2F1P
+::: Interpretação :::
+Aparece-nos uma palavra comum: "IHDR". Esta palavra é muito utilizada em PNGs, diretamente a seguir ao file header. Será que lhe falta o file header??? Vamos adicioná-lo à mão utilizando o hexeditor, mas num backup.
+
+cp oktoberfest.txt oktoberfest-corrected.png
+hexeditor oktoberfest-corrected.png
+Após o comando acima, vemos os primeiros 8 bytes com os seguintes valores: "47 0D 0A 1A 0A 00 00 00"
+Vamos substituir estes por: "89 50 4E 47 0D 0A 1A 0A", e ver o que acontece.
+Ainda não deu. Isto é porque o IHDR não estava no local correto, e ao substituirmos um header normal lá, deu-nos um erro devido ao CRC do ficheiro. No entanto, suspeitamos que apenas temos que pôr os primeiros 3 bytes do header no início, mas sem ser em "insert mode".
+Fizemos, então, o seguinte:
+
+python -c "print('\x89\x50\x4e')" | tr -d '\n' > oktoberfest-corrected.png
+cat oktoberfest.txt >> oktoberfest-corrected.png
+
+Voilà! Conseguimos encontrar o PNG escondido. É a imagem de um outro drone. Achamos que se trata dos planos do drone B. Portanto, acabámos de encontrar o segredo do indíce 2: os planos do drone B.
+
+::: Wrap-up desta secção até agora :::
+A password encontrada no documento word foi-nos útil para descobrir as passwords dos servidores de ficheiro da DroneX e os planos do drone B (precisa-se ainda de confirmação da DroneX de que isto são os ficheiros do drone B para esta prova ser relevante e, consequentemente, admissível). O comando strings dos segredos obtidos com a password "51782" a partir das imagens 'cathedral.png' e 'street.png' não se revelou particularmente útil. Vamos agora passar a analisar melhor estes ficheiros ('cathedral.txt' e 'street.txt') de forma a verificar o que realmente significam.
+
+Corremos o 'hexdump' com a flag '-C' no ficheiro na esperança de encontrar algo. Não encontrámos. Vamos tentar correr um programa para encontrar file signatures conhecidas nos dois ficheiros
+
+Tentámos o extract.py com 0 pois reparámos que o 'oktoberfest-output.png' outputed pelo 'extract.py' (agora denominado 'oktoberfest-corrected.png') estava corrupto por 3 bytes (password), e conseguimos os outputs corretos. Pelos vistos, tinhamos assumido erroneamente que estavam a usar a password 51782, que na realidade é mapeada para a password 3, isto porque o "mod 13" modifica a password inicial, sendo possível apenas ter passwords no intervalo [0,12]. Portanto, o 'oktoberfest-output.png' ficou agora correcto, diretamente obtido utilizando o script com a password a 0.
+Vamos então agora correr de novo o 'extract.py' nos outros ficheiros PNG: 'street.png' e 'cathedral.png'
+
+./extract.py ../cathedral.png 0 > cathedral-output.txt
+./extract.py ../street.png 0 > street-output.txt
+
+file cathedral-output.txt
+output: "data"
+file street-output.txt
+output: "PNG"!
+
+Obtivemos outro PNG! Mas não tem nada de interessante. Vamos tentar correr o extract.py de novo neste PNG!
+mv street-output.txt street-output.png
+
+./extract.py street-output.png 0 > street-output-output.txt
+file street-output-output.txt
+::: OUTPUT :::
+street-output-output.txt: UTF-8 Unicode text
+cat street-output-output.txt
+
+Encontrámos as especificações técnicas do Drone A e Drone B! É o indíce 3 dos ficheiro que ele disse que tinha enviado no 'snow.bmp'. Já está!
+
+Temos 4 segredos descobertos. Ele disse que enviou 5 ficheiros. Isto é suspeito... vamos ter que ver melhor a 'cathedral.png'. Outro facto interessante é que ainda não usámos a password que tínhamos obtido anteriormente... por que será? Onde será que a password deve ser usada?
+
+Bem... já usámos a password 51782 e 0, não obtendo um resultado satisfatório a partir do 'cathedral.png'. Vamos tentar usar a combinação '5','1','7','8','2' a extrair os outputs. Não funcionou pois o output com a password '5' não é um resultado válido. Não é um ficheiro PNG. Será que a password 51782 é, na realidade, a PASSWORD real que devia ser passada ao programa. Isto é, será que a password se refere ao número 51782 e não ao número 51782%13 (= 3). Vou alterar o programa para receber a password 51782 sem fazer módulo 13 e utilizá-la para extrair possível informação. De novo, não obtivemos nada útil...
+
+Temos que procurar por possíveis file signatures no ficheiro...
+
+Não. Afinal, depois de falarmos com o professor Filipe, foi-nos revelado que só existem 4 ficheiros com informação escondida, e que o facto de no ficheiro "snow.bmp" dizer que foram enviados 5 ficheiros foi na realidade um bug.
+
+### CONCLUSÃO ###
+Podemos concluir, portanto, que a pessoa responsável por isto utilizou a pen de John para guardar (não podemos concluir diretamente que foi John) toda esta informação obfuscada. Esta informação obfuscada revelou-se incriminatória uma vez que eram ficheiros confidenciais pertencentes a empresa DroneX.

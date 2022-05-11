@@ -1,0 +1,525 @@
+Offset(V)          Name                    PID pslist psscan pid_hash kmem_cache parents leaders
+------------------ -------------------- ------ ------ ------ -------- ---------- ------- -------
+0x000000003e2fc440 systemd                   1 True   True   True     False      True    True   
+0x000000003e2fdb00 kthreadd                  2 True   True   True     False      True    True   
+0x000000003e2fad80 kworker/0:0H              4 True   True   True     False      False   True   
+0x000000003e32c440 mm_percpu_wq              6 True   True   True     False      False   True   
+0x000000003e32db00 ksoftirqd/0               7 True   True   True     False      False   True   
+0x000000003e3296c0 rcu_sched                 8 True   True   True     False      False   True   
+0x000000003e32ad80 rcu_bh                    9 True   True   True     False      False   True   
+0x000000003e328000 migration/0              10 True   True   True     False      False   True   
+0x000000003e330000 watchdog/0               11 True   True   True     False      False   True   
+0x000000003e334440 cpuhp/0                  12 True   True   True     False      False   True   
+0x000000003e335b00 kdevtmpfs                13 True   True   True     False      False   True   
+0x000000003e3316c0 netns                    14 True   True   True     False      False   True   
+0x000000003e332d80 rcu_tasks_kthre          15 True   True   True     False      False   True   
+0x000000003e395b00 kauditd                  16 True   True   True     False      False   True   
+0x000000003e3916c0 khungtaskd               17 True   True   True     False      False   True   
+0x000000003e392d80 oom_reaper               18 True   True   True     False      False   True   
+0x000000003e390000 writeback                19 True   True   True     False      False   True   
+0x000000003e394440 kcompactd0               20 True   True   True     False      False   True   
+0x000000003e3fdb00 ksmd                     21 True   True   True     False      False   True   
+0x000000003e3f96c0 khugepaged               22 True   True   True     False      False   True   
+0x000000003e3fad80 crypto                   23 True   True   True     False      False   True   
+0x000000003e3f8000 kintegrityd              24 True   True   True     False      False   True   
+0x000000003e3fc440 kblockd                  25 True   True   True     False      False   True   
+0x000000003d8adb00 ata_sff                  26 True   True   True     False      False   True   
+0x000000003d8a96c0 md                       27 True   True   True     False      False   True   
+0x000000003d8aad80 edac-poller              28 True   True   True     False      False   True   
+0x000000003d8a8000 devfreq_wq               29 True   True   True     False      False   True   
+0x000000003d8ac440 watchdogd                30 True   True   True     False      False   True   
+0x000000003d9a5b00 kworker/u2:1             31 True   True   True     False      False   True   
+0x000000003d9a0000 kswapd0                  34 True   True   True     False      False   True   
+0x000000003d9a4440 ecryptfs-kthrea          35 True   True   True     False      False   True   
+0x00000000344b0000 kthrotld                 77 True   True   True     False      False   True   
+0x00000000344b4440 acpi_thermal_pm          78 True   True   True     False      False   True   
+0x00000000344b5b00 scsi_eh_0                79 True   True   True     False      False   True   
+0x00000000344b16c0 scsi_tmf_0               80 True   True   True     False      False   True   
+0x000000003466ad80 scsi_eh_1                81 True   True   True     False      False   True   
+0x0000000034668000 scsi_tmf_1               82 True   True   True     False      False   True   
+0x000000003466c440 kworker/u2:2             83 True   True   True     False      False   True   
+0x000000003466db00 kworker/u2:3             84 True   True   True     False      False   True   
+0x00000000344716c0 ipv6_addrconf            88 True   True   True     False      False   True   
+0x000000003d9a2d80 kstrp                    97 True   True   True     False      False   True   
+0x000000003447c440 charger_manager         114 True   True   True     False      False   True   
+0x00000000344896c0 kworker/u2:4            159 True   True   True     False      False   True   
+0x00000000344b2d80 kworker/0:1H            160 True   True   True     False      False   True   
+0x000000003448db00 scsi_eh_2               161 True   True   True     False      False   True   
+0x000000003446ad80 scsi_tmf_2              162 True   True   True     False      False   True   
+0x0000000034482d80 jbd2/sda1-8             185 True   True   True     False      False   True   
+0x00000000344816c0 ext4-rsv-conver         186 True   True   True     False      False   True   
+0x00000000344696c0 systemd-journal         214 True   True   True     False      False   True   
+0x000000003491c440 kworker/0:5             242 True   True   True     False      False   True   
+0x000000002efc4440 iprt-VBoxWQueue         324 True   True   True     False      False   True   
+0x00000000344796c0 ttm_swap                329 True   True   True     False      False   True   
+0x000000002efc16c0 rsyslogd                638 True   True   True     False      False   True   
+0x0000000034918000 dbus-daemon             646 True   True   True     False      False   True   
+0x00000000316f96c0 accounts-daemon         658 True   True   True     False      False   True   
+0x00000000316fc440 cron                    660 True   True   True     False      False   True   
+0x00000000383c0000 avahi-daemon            665 True   True   True     False      True    True   
+0x00000000385016c0 systemd-logind          670 True   True   True     False      False   True   
+0x0000000038502d80 NetworkManager          671 True   True   True     False      True    True   
+0x0000000033cfad80 acpid                   687 True   True   True     False      False   True   
+0x0000000034b52d80 snapd                   697 True   True   True     False      False   True   
+0x0000000034480000 avahi-daemon            723 True   True   True     False      False   True   
+0x00000000351e96c0 polkitd                 747 True   True   True     False      False   True   
+0x000000003446c440 lightdm                 773 True   True   True     False      True    True   
+0x0000000034b50000 Xorg                    789 True   True   True     False      False   True   
+0x0000000034f5ad80 dhclient                811 True   True   True     False      False   True   
+0x00000000349196c0 dnsmasq                 824 True   True   True     False      False   True   
+0x00000000394096c0 lightdm                1025 True   True   True     False      True    True   
+0x0000000033c64440 rtkit-daemon           1084 True   True   True     False      False   True   
+0x0000000039698000 upowerd                1105 True   True   True     False      False   True   
+0x0000000039664440 colord                 1127 True   True   True     False      False   True   
+0x0000000033c42d80 systemd                1148 True   True   True     False      True    True   
+0x0000000033c44440 (sd-pam)               1149 True   True   True     False      False   True   
+0x000000003969c440 gnome-keyring-d        1196 True   True   True     False      False   True   
+0x00000000396996c0 upstart                1211 True   True   True     False      True    True   
+0x000000003940c440 upstart-udev-br        1291 True   True   True     False      False   True   
+0x00000000395cc440 dbus-daemon            1298 True   True   True     False      False   True   
+0x0000000030c72d80 window-stack-br        1310 True   True   True     False      False   True   
+0x0000000035488000 bamfdaemon             1349 True   True   True     False      False   True   
+0x0000000030c70000 upstart-dbus-br        1354 True   True   True     False      False   True   
+0x0000000034ce16c0 upstart-dbus-br        1357 True   True   True     False      False   True   
+0x0000000038504440 upstart-file-br        1359 True   True   True     False      False   True   
+0x0000000034ce4440 ibus-daemon            1361 True   True   True     False      True    True   
+0x0000000033c5ad80 gvfsd                  1367 True   True   True     False      False   True   
+0x0000000034fddb00 gvfsd-fuse             1378 True   True   True     False      False   True   
+0x0000000033c516c0 at-spi-bus-laun        1379 True   True   True     False      True    True   
+0x00000000316616c0 ibus-dconf             1382 True   True   True     False      False   True   
+0x00000000351edb00 ibus-ui-gtk3           1393 True   True   True     False      False   True   
+0x0000000034f6db00 dbus-daemon            1396 True   True   True     False      False   True   
+0x0000000033c40000 ibus-x11               1398 True   True   True     False      False   True   
+0x0000000030c75b00 at-spi2-registr        1403 True   True   True     False      False   True   
+0x0000000039665b00 ibus-engine-sim        1416 True   True   True     False      False   True   
+0x000000002ef24440 whoopsie               1422 True   True   True     False      False   True   
+0x0000000034b516c0 agetty                 1433 True   True   True     False      False   True   
+0x0000000035e58000 gpg-agent              1601 True   True   True     False      False   True   
+0x00000000346696c0 hud-service            1693 True   True   True     False      False   True   
+0x0000000033c5db00 unity-settings-        1695 True   True   True     False      False   True   
+0x00000000351e5b00 gnome-session-b        1704 True   True   True     False      True    True   
+0x0000000035e1db00 unity-panel-ser        1716 True   True   True     False      False   True   
+0x00000000307a16c0 indicator-messa        1748 True   True   True     False      False   True   
+0x00000000307a2d80 indicator-bluet        1749 True   True   True     False      False   True   
+0x00000000307a0000 indicator-power        1750 True   True   True     False      False   True   
+0x000000002ee196c0 indicator-datet        1766 True   True   True     False      False   True   
+0x000000002ee18000 indicator-keybo        1768 True   True   True     False      False   True   
+0x0000000035ea16c0 indicator-sound        1773 True   True   True     False      False   True   
+0x0000000033d25b00 indicator-print        1779 True   True   True     False      False   True   
+0x0000000034470000 indicator-sessi        1785 True   True   True     False      False   True   
+0x0000000039662d80 evolution-sourc        1804 True   True   True     False      False   True   
+0x0000000030d72d80 indicator-appli        1810 True   True   True     False      False   True   
+0x0000000030d74440 pulseaudio             1814 True   True   True     False      False   True   
+0x000000002f102d80 dconf-service          1845 True   True   True     False      False   True   
+0x000000002f100000 evolution-calen        1869 True   True   True     False      True    True   
+0x0000000033d9db00 compiz                 1877 True   True   True     False      False   True   
+0x000000002f1296c0 nm-applet              1898 True   True   True     False      False   True   
+0x00000000350dc440 nautilus               1901 True   True   True     False      False   True   
+0x0000000033d996c0 unity-fallback-        1909 True   True   True     False      False   True   
+0x000000002ee1db00 polkit-gnome-au        1910 True   True   True     False      False   True   
+0x000000002ee1c440 gnome-software         1911 True   True   True     False      False   True   
+0x000000003552ad80 evolution-calen        1923 True   True   True     False      False   True   
+0x0000000031494440 gvfs-udisks2-vo        1937 True   True   True     False      False   True   
+0x00000000315c4440 udisksd                1948 True   True   True     False      False   True   
+0x00000000315c2d80 evolution-calen        1956 True   True   True     False      False   True   
+0x000000003899ad80 evolution-addre        1957 True   True   True     False      True    True   
+0x000000003899c440 fwupd                  1959 True   True   True     False      False   True   
+0x0000000038635b00 gvfs-afc-volume        1965 True   True   True     False      False   True   
+0x0000000038634440 gvfs-gphoto2-vo        1974 True   True   True     False      False   True   
+0x00000000386b16c0 gvfs-goa-volume        1981 True   True   True     False      False   True   
+0x0000000038894440 evolution-addre        1982 True   True   True     False      False   True   
+0x00000000387d0000 gvfs-mtp-volume        1987 True   True   True     False      False   True   
+0x00000000381b0000 gvfsd-trash            2020 True   True   True     False      False   True   
+0x000000003448ad80 gvfsd-metadata         2047 True   True   True     False      False   True   
+0x000000002efc2d80 zeitgeist-datah        2240 True   True   True     False      False   True   
+0x0000000035722d80 sh                     2248 True   True   True     False      True    True   
+0x00000000357216c0 zeitgeist-daemo        2253 True   True   True     False      False   True   
+0x0000000035724440 zeitgeist-fts          2263 True   True   True     False      False   True   
+0x0000000033c416c0 update-notifier        2414 True   True   True     False      False   True   
+0x00000000397cad80 systemd-timesyn        4738 True   True   True     False      False   True   
+0x0000000034890000 systemd-udevd          7208 True   True   True     False      False   True   
+0x00000000397cc440 deja-dup-monito       14147 True   True   True     False      False   True   
+0x0000000039408000 gvfsd-network         14217 True   True   True     False      False   True   
+0x000000002fa216c0 gvfsd-dnssd           14243 True   True   True     False      False   True   
+0x0000000033c58000 cupsd                 14400 True   True   True     False      True    True   
+0x00000000354896c0 cups-browsed          14401 True   True   True     False      False   True   
+0x0000000035788000 dbus                  14411 True   True   True     False      False   True   
+0x00000000357896c0 dbus                  14412 True   True   True     False      False   True   
+0x00000000352e5b00 kworker/0:0           14829 True   True   True     False      False   True   
+0x00000000356b5b00 main                  14919 True   True   True     False      True    True   
+0x00000000356b0000 main                  14921 True   True   True     False      False   True   
+0x00000000381f2d80 gnome-terminal-       15240 True   True   True     False      True    True   
+0x00000000386b4440 bash                  15246 True   True   True     False      True    True   
+0x000000003448c440 sudo                  15294 True   True   True     False      True    True   
+0x0000000033d5ad80 insmod                15297 True   True   True     False      False   True   
+0x0000000033d596c0 (tmpfiles)            15298 True   True   True     False      False   True   
+0x000000002efc5b00 in:imuxsock             655 False  True   True     False      False   False  
+0x000000003447ad80 in:imklog               656 False  True   True     False      False   False  
+0x0000000034478000 rs:main Q:Reg           657 False  True   True     False      False   False  
+0x0000000033cf96c0 gmain                   690 False  True   True     False      False   False  
+0x00000000351ec440 gdbus                   704 False  True   True     False      False   False  
+0x00000000348916c0 gmain                   749 False  True   True     False      False   False  
+0x0000000034895b00 gdbus                   751 False  True   True     False      False   False  
+0x0000000038500000 snapd                   754 False  True   True     False      False   False  
+0x0000000033cf8000 snapd                   755 False  True   True     False      False   False  
+0x00000000383c5b00 snapd                   757 False  True   True     False      False   False  
+0x00000000383c4440 gmain                   759 False  True   True     False      False   False  
+0x00000000316f8000 gdbus                   761 False  True   True     False      False   False  
+0x0000000034484440 gmain                   779 False  True   True     False      False   False  
+0x0000000034475b00 gdbus                   782 False  True   True     False      False   False  
+0x0000000034f6ad80 snapd                   792 False  True   True     False      False   False  
+0x0000000034f6c440 snapd                   794 False  True   True     False      False   False  
+0x0000000034f596c0 snapd                   800 False  True   True     False      False   False  
+0x000000003548db00 InputThread             897 False  True   True     False      False   False  
+0x0000000033c62d80 rtkit-daemon           1085 False  True   True     False      False   False  
+0x00000000395c8000 rtkit-daemon           1086 False  True   True     False      False   False  
+0x0000000034fd96c0 gmain                  1107 False  True   True     False      False   False  
+0x0000000034fd8000 gdbus                  1108 False  True   True     False      False   False  
+0x0000000033c616c0 gmain                  1128 False  True   True     False      False   False  
+0x000000003940db00 gdbus                  1130 False  True   True     False      False   False  
+0x0000000035e1ad80 gmain                  1136 False  True   True     False      False   False  
+0x0000000035e18000 gdbus                  1137 False  True   True     False      False   False  
+0x0000000031662d80 gmain                  1197 False  True   True     False      False   False  
+0x0000000033c116c0 timer                  1329 False  True   True     False      False   False  
+0x00000000396616c0 gdbus                  1331 False  True   True     False      False   False  
+0x0000000034fdc440 gmain                  1363 False  True   True     False      False   False  
+0x0000000034fdad80 gdbus                  1364 False  True   True     False      False   False  
+0x0000000034ce5b00 dconf worker           1365 False  True   True     False      False   False  
+0x0000000033c5c440 gmain                  1368 False  True   True     False      False   False  
+0x0000000033c596c0 gdbus                  1369 False  True   True     False      False   False  
+0x0000000033c65b00 gmain                  1372 False  True   True     False      False   False  
+0x0000000031660000 gdbus                  1373 False  True   True     False      False   False  
+0x00000000395cdb00 gvfsd-fuse             1385 False  True   True     False      False   False  
+0x0000000031664440 dconf worker           1386 False  True   True     False      False   False  
+0x0000000033c10000 gmain                  1387 False  True   True     False      False   False  
+0x0000000033c14440 gvfsd-fuse             1389 False  True   True     False      False   False  
+0x000000003969db00 gdbus                  1390 False  True   True     False      False   False  
+0x0000000033c55b00 gmain                  1391 False  True   True     False      False   False  
+0x00000000383c2d80 gdbus                  1392 False  True   True     False      False   False  
+0x0000000034f696c0 gmain                  1394 False  True   True     False      False   False  
+0x0000000034f68000 gdbus                  1395 False  True   True     False      False   False  
+0x0000000033c45b00 gvfs-fuse-sub          1399 False  True   True     False      False   False  
+0x0000000034b55b00 gmain                  1404 False  True   True     False      False   False  
+0x0000000030c74440 gdbus                  1405 False  True   True     False      False   False  
+0x000000003548c440 dconf worker           1406 False  True   True     False      False   False  
+0x0000000039660000 gmain                  1407 False  True   True     False      False   False  
+0x0000000034894440 gdbus                  1408 False  True   True     False      False   False  
+0x0000000034f5db00 dconf worker           1409 False  True   True     False      False   False  
+0x0000000034f58000 dconf worker           1410 False  True   True     False      False   False  
+0x0000000034fa4440 gmain                  1411 False  True   True     False      False   False  
+0x0000000034fa5b00 gdbus                  1412 False  True   True     False      False   False  
+0x000000002ef22d80 gmain                  1417 False  True   True     False      False   False  
+0x000000002ef20000 gdbus                  1418 False  True   True     False      False   False  
+0x00000000395c96c0 gmain                  1429 False  True   True     False      False   False  
+0x0000000034b54440 gdbus                  1434 False  True   True     False      False   False  
+0x0000000033c54440 dconf worker           1717 False  True   True     False      False   False  
+0x0000000034ce0000 gmain                  1718 False  True   True     False      False   False  
+0x00000000351e4440 gdbus                  1719 False  True   True     False      False   False  
+0x00000000395f2d80 dconf worker           1725 False  True   True     False      False   False  
+0x0000000035e5db00 gmain                  1726 False  True   True     False      False   False  
+0x0000000035e596c0 gdbus                  1727 False  True   True     False      False   False  
+0x0000000035e5c440 dconf worker           1728 False  True   True     False      False   False  
+0x0000000035e5ad80 gmain                  1729 False  True   True     False      False   False  
+0x000000002ef216c0 gdbus                  1730 False  True   True     False      False   False  
+0x0000000034fa2d80 gmain                  1751 False  True   True     False      False   False  
+0x00000000395f5b00 gdbus                  1753 False  True   True     False      False   False  
+0x000000002f9416c0 gmain                  1754 False  True   True     False      False   False  
+0x000000002f940000 dconf worker           1756 False  True   True     False      False   False  
+0x000000002f945b00 gdbus                  1758 False  True   True     False      False   False  
+0x000000002f9f4440 dconf worker           1759 False  True   True     False      False   False  
+0x000000002f9f5b00 gmain                  1760 False  True   True     False      False   False  
+0x000000002f9f2d80 dconf worker           1762 False  True   True     False      False   False  
+0x000000002ee1ad80 gmain                  1767 False  True   True     False      False   False  
+0x0000000035ea2d80 gdbus                  1769 False  True   True     False      False   False  
+0x0000000035ea4440 dconf worker           1771 False  True   True     False      False   False  
+0x00000000351e16c0 pool                   1774 False  True   True     False      False   False  
+0x0000000033d216c0 gdbus                  1775 False  True   True     False      False   False  
+0x0000000033d22d80 gmain                  1776 False  True   True     False      False   False  
+0x0000000033d5db00 gdbus                  1780 False  True   True     False      False   False  
+0x0000000034fa0000 gmain                  1786 False  True   True     False      False   False  
+0x000000003071db00 gdbus                  1787 False  True   True     False      False   False  
+0x0000000033d98000 dconf worker           1788 False  True   True     False      False   False  
+0x0000000033d9c440 gmain                  1789 False  True   True     False      False   False  
+0x000000002f12ad80 dconf worker           1800 False  True   True     False      False   False  
+0x000000002f1bc440 gdbus                  1805 False  True   True     False      False   False  
+0x0000000030d70000 dconf worker           1811 False  True   True     False      False   False  
+0x0000000033d24440 gmain                  1816 False  True   True     False      False   False  
+0x000000002f12c440 gdbus                  1817 False  True   True     False      False   False  
+0x000000002f1b8000 gmain                  1818 False  True   True     False      False   False  
+0x0000000033d88000 dconf worker           1821 False  True   True     False      False   False  
+0x0000000033d8c440 dconf worker           1822 False  True   True     False      False   False  
+0x0000000033d8db00 gmain                  1823 False  True   True     False      False   False  
+0x0000000033d8ad80 gdbus                  1825 False  True   True     False      False   False  
+0x00000000307a4440 gdbus                  1827 False  True   True     False      False   False  
+0x000000003552c440 gmain                  1835 False  True   True     False      False   False  
+0x00000000350dad80 gdbus                  1839 False  True   True     False      False   False  
+0x0000000038478000 dconf worker           1840 False  True   True     False      False   False  
+0x000000003847db00 alsa-sink-Intel        1842 False  True   True     False      False   False  
+0x00000000384796c0 alsa-source-Int        1843 False  True   True     False      False   False  
+0x0000000035ea0000 gmain                  1851 False  True   True     False      False   False  
+0x00000000316fad80 gdbus                  1852 False  True   True     False      False   False  
+0x000000003552db00 indicator-datet        1867 False  True   True     False      False   False  
+0x000000003847c440 gmain                  1891 False  True   True     False      False   False  
+0x000000002f128000 dconf worker           1894 False  True   True     False      False   False  
+0x000000003446db00 gdbus                  1896 False  True   True     False      False   False  
+0x0000000030d716c0 dconf worker           1905 False  True   True     False      False   False  
+0x0000000030d75b00 gmain                  1906 False  True   True     False      False   False  
+0x00000000351e2d80 gdbus                  1907 False  True   True     False      False   False  
+0x0000000033d5c440 gmain                  1914 False  True   True     False      False   False  
+0x0000000033d58000 dconf worker           1915 False  True   True     False      False   False  
+0x000000002ef25b00 evolution-calen        1916 False  True   True     False      False   False  
+0x0000000035ea5b00 dconf worker           1917 False  True   True     False      False   False  
+0x0000000034468000 gdbus                  1918 False  True   True     False      False   False  
+0x000000002f1b96c0 gmain                  1919 False  True   True     False      False   False  
+0x000000002f1bdb00 gdbus                  1920 False  True   True     False      False   False  
+0x00000000355296c0 dconf worker           1924 False  True   True     False      False   False  
+0x00000000395f16c0 gmain                  1925 False  True   True     False      False   False  
+0x000000002f9f16c0 gdbus                  1926 False  True   True     False      False   False  
+0x000000003847ad80 gmain                  1927 False  True   True     False      False   False  
+0x000000002f12db00 gdbus                  1928 False  True   True     False      False   False  
+0x000000003cb74440 dconf worker           1932 False  True   True     False      False   False  
+0x000000003cb75b00 evolution-calen        1933 False  True   True     False      False   False  
+0x000000003cb716c0 gmain                  1934 False  True   True     False      False   False  
+0x000000003cb72d80 gdbus                  1935 False  True   True     False      False   False  
+0x00000000315596c0 gmain                  1942 False  True   True     False      False   False  
+0x000000003155ad80 gdbus                  1943 False  True   True     False      False   False  
+0x0000000031558000 dconf worker           1944 False  True   True     False      False   False  
+0x000000003155c440 gmain                  1945 False  True   True     False      False   False  
+0x000000003155db00 gdbus                  1946 False  True   True     False      False   False  
+0x00000000315c0000 pool                   1947 False  True   True     False      False   False  
+0x00000000315c5b00 evolution-calen        1949 False  True   True     False      False   False  
+0x0000000038895b00 gmain                  1951 False  True   True     False      False   False  
+0x0000000038892d80 gdbus                  1953 False  True   True     False      False   False  
+0x0000000038890000 probing-thread         1954 False  True   True     False      False   False  
+0x000000003899db00 cleanup                1960 False  True   True     False      False   False  
+0x00000000389996c0 gmain                  1961 False  True   True     False      False   False  
+0x00000000315c16c0 gmain                  1962 False  True   True     False      False   False  
+0x00000000386316c0 dconf worker           1966 False  True   True     False      False   False  
+0x0000000038632d80 evolution-addre        1967 False  True   True     False      False   False  
+0x0000000031490000 gvfs-afc-volume        1968 False  True   True     False      False   False  
+0x00000000386b2d80 gdbus                  1969 False  True   True     False      False   False  
+0x00000000386b0000 gmain                  1970 False  True   True     False      False   False  
+0x00000000386b5b00 gdbus                  1972 False  True   True     False      False   False  
+0x0000000031495b00 gmain                  1975 False  True   True     False      False   False  
+0x0000000038718000 gdbus                  1977 False  True   True     False      False   False  
+0x000000003871db00 gmain                  1983 False  True   True     False      False   False  
+0x0000000031492d80 gdbus                  1984 False  True   True     False      False   False  
+0x00000000387d4440 gmain                  1988 False  True   True     False      False   False  
+0x00000000387196c0 gmain                  1991 False  True   True     False      False   False  
+0x0000000038005b00 dconf worker           1993 False  True   True     False      False   False  
+0x00000000380016c0 evolution-addre        1994 False  True   True     False      False   False  
+0x0000000038002d80 gdbus                  1995 False  True   True     False      False   False  
+0x0000000038000000 gdbus                  1996 False  True   True     False      False   False  
+0x00000000387d2d80 dconf worker           1997 False  True   True     False      False   False  
+0x00000000380396c0 dconf worker           1999 False  True   True     False      False   False  
+0x000000003803ad80 evolution-calen        2000 False  True   True     False      False   False  
+0x0000000038038000 gmain                  2001 False  True   True     False      False   False  
+0x000000003803c440 gdbus                  2002 False  True   True     False      False   False  
+0x00000000381b4440 gmain                  2021 False  True   True     False      False   False  
+0x00000000381b2d80 gdbus                  2022 False  True   True     False      False   False  
+0x000000003815c440 fwupd                  2042 False  True   True     False      False   False  
+0x000000003815db00 GUsbEventThread        2043 False  True   True     False      False   False  
+0x00000000381596c0 gdbus                  2044 False  True   True     False      False   False  
+0x00000000380c8000 gmain                  2050 False  True   True     False      False   False  
+0x00000000380c96c0 gdbus                  2051 False  True   True     False      False   False  
+0x0000000030f52d80 gmain                  2244 False  True   True     False      False   False  
+0x0000000030f54440 pool                   2245 False  True   True     False      False   False  
+0x0000000030f55b00 gdbus                  2246 False  True   True     False      False   False  
+0x0000000035725b00 gmain                  2254 False  True   True     False      False   False  
+0x000000003578ad80 gdbus                  2255 False  True   True     False      False   False  
+0x0000000035284440 gmain                  2267 False  True   True     False      False   False  
+0x0000000035285b00 gdbus                  2268 False  True   True     False      False   False  
+0x0000000035720000 dconf worker           2417 False  True   True     False      False   False  
+0x0000000033d20000 gmain                  2418 False  True   True     False      False   False  
+0x00000000395f0000 gdbus                  2419 False  True   True     False      False   False  
+0x00000000397cdb00 sd-resolve             4739 False  True   True     False      False   False  
+0x00000000397c96c0 dconf worker          14148 False  True   True     False      False   False  
+0x000000002efc0000 gmain                 14149 False  True   True     False      False   False  
+0x0000000034474440 gdbus                 14150 False  True   True     False      False   False  
+0x0000000033c60000 gmain                 14220 False  True   True     False      False   False  
+0x00000000305c2d80 gdbus                 14221 False  True   True     False      False   False  
+0x0000000030c716c0 dconf worker          14228 False  True   True     False      False   False  
+0x000000002fa24440 gmain                 14244 False  True   True     False      False   False  
+0x000000003578db00 gdbus                 14245 False  True   True     False      False   False  
+0x000000002fa20000 gmain                 14413 False  True   True     False      False   False  
+0x00000000383c16c0 gdbus                 14414 False  True   True     False      False   False  
+0x0000000033d9ad80 pool                  14484 False  True   True     False      False   False  
+0x00000000381f16c0 dconf worker          15241 False  True   True     False      False   False  
+0x00000000381f5b00 gmain                 15242 False  True   True     False      False   False  
+0x00000000381f4440 gdbus                 15243 False  True   True     False      False   False  
+0x00000000381b5b00 pool                  15276 False  True   True     False      False   False  
+0x000000003940ad80 main                  15287 False  True   True     False      False   False  
+0x000000003803db00 pool                  15288 False  True   True     False      False   False  
+0x0000000037412480 swapper/0                 0 False  False  False    False      True    False  
+0x0000000000040000 DNS Resolver #4       14773 False  True   False    False      False   False  
+0x00000000000416c0 PaintThread           14771 False  True   False    False      False   False  
+0x0000000000042d80 lesspipe              14911 False  True   False    False      False   False  
+0x0000000000044440 Socket Thread         14769 False  True   False    False      False   False  
+0x0000000000045b00 Timer                 14770 False  True   False    False      False   False  
+0x000000000d238460 Socket Thread         14769 False  True   False    False      False   False  
+0x000000001c44c0a0 Socket Thread         14769 False  True   False    False      False   False  
+0x000000002f1016c0 mozStorage #2         15202 False  True   False    False      False   False  
+0x000000002f104440 ImgDecoder #1         15203 False  True   False    False      False   False  
+0x000000002f105b00 mozStorage #1         15201 False  True   False    False      False   False  
+0x000000002f1bad80 HTML5 Parser          15101 False  True   False    False      False   False  
+0x000000002f240000 WebExtensions         14696 False  True   False    False      False   False  
+0x000000002f2416c0 FS Broker 14696       14698 False  True   False    False      False   False  
+0x000000002f242d80 SaveScripts           14756 False  True   False    False      False   False  
+0x000000002f244440 DOM Worker            14695 False  True   False    False      False   False  
+0x000000002f245b00 PaintThread           14710 False  True   False    False      False   False  
+0x000000002f368000 pool                  15011 False  True   False    False      False   False  
+0x000000002f3696c0 ImgDecoder #1         14774 False  True   False    False      False   False  
+0x000000002f36ad80 ImageIO               14775 False  True   False    False      False   False  
+0x000000002f36c440 ImageBr~geChild       14777 False  True   False    False      False   False  
+0x000000002f36db00 VideoChild            14778 False  True   False    False      False   False  
+0x000000002f398000 JS Watchdog           14766 False  True   False    False      False   False  
+0x000000002f3996c0 dconf worker          14764 False  True   False    False      False   False  
+0x000000002f39ad80 mozStorage #5         14765 False  True   False    False      False   False  
+0x000000002f39c440 JS Helper             14767 False  True   False    False      False   False  
+0x000000002f39db00 Chrome_~dThread       14763 False  True   False    False      False   False  
+0x000000002f942d80 JS Helper             15078 False  True   False    False      False   False  
+0x000000002f944440 JS Helper             15077 False  True   False    False      False   False  
+0x000000002f9f0000 Chrome_~dThread       15171 False  True   False    False      False   False  
+0x000000002fa22d80 Timer                 15151 False  True   False    False      False   False  
+0x000000002fa25b00 JS Watchdog           15147 False  True   False    False      False   False  
+0x000000002fac8000 DOM File              14736 False  True   False    False      False   False  
+0x000000002fac96c0 basename              14910 False  True   False    False      False   False  
+0x000000002facad80 DOM Worker            14734 False  True   False    False      False   False  
+0x000000002facc440 bash                  14908 False  True   False    False      False   False  
+0x000000002facdb00 lesspipe              14909 False  True   False    False      False   False  
+0x000000002fb40000 ImageIO               14605 False  True   False    False      False   False  
+0x000000002fb416c0 VRListener            14603 False  True   False    False      False   False  
+0x000000002fb42d80 ImgDecoder #1         14604 False  True   False    False      False   False  
+0x000000002fb44440 file                  14941 False  True   False    False      False   False  
+0x000000002fb45b00 Compositor            14602 False  True   False    False      False   False  
+0x000000002fb98000 dconf worker          14656 False  True   False    False      False   False  
+0x000000002fb996c0 JS Helper             14658 False  True   False    False      False   False  
+0x000000002fb9ad80 Chrome_~dThread       14655 False  True   False    False      False   False  
+0x000000002fb9c440 ProcessHangMon        14654 False  True   False    False      False   False  
+0x000000002fb9db00 JS Watchdog           14657 False  True   False    False      False   False  
+0x0000000030430000 ImageJ-linux64        15019 False  True   False    False      False   False  
+0x00000000304316c0 ProcessHangMon        14780 False  True   False    False      False   False  
+0x0000000030432d80 ProfilerChild         14781 False  True   False    False      False   False  
+0x0000000030434440 mozStorage #6         14783 False  True   False    False      False   False  
+0x0000000030435b00 DOM File              14779 False  True   False    False      False   False  
+0x00000000305c0000 Link Monitor          15074 False  True   False    False      False   False  
+0x00000000305c16c0 Socket Thread         15075 False  True   False    False      False   False  
+0x00000000305c4440 JS Watchdog           15076 False  True   False    False      False   False  
+0x00000000305c5b00 Timer                 15073 False  True   False    False      False   False  
+0x0000000030718000 GMPThread             15091 False  True   False    False      False   False  
+0x00000000307196c0 Softwar~cThread       15092 False  True   False    False      False   False  
+0x000000003071ad80 Compositor            15093 False  True   False    False      False   False  
+0x000000003071c440 dconf worker          15191 False  True   False    False      False   False  
+0x00000000307a5b00 Socket Thread         15150 False  True   False    False      False   False  
+0x0000000030f50000 pool                  15279 False  True   False    False      False   False  
+0x0000000030f516c0 pool                  15280 False  True   False    False      False   False  
+0x00000000314916c0 PaintThread           15152 False  True   False    False      False   False  
+0x0000000031665b00 JS Helper             15149 False  True   False    False      False   False  
+0x00000000316fdb00 dirname               15252 False  True   False    False      False   False  
+0x0000000031808ce0 Socket Thread         14769 False  True   False    False      False   False  
+0x00000000318aa740 dirname               15252 False  True   False    False      False   False  
+0x0000000031ef3740                       14657 False  True   False    False      False   False  
+0x0000000032f4d740 0:0/block/sda         15073 False  True   False    False      False   False  
+0x000000003337d080 gnome-software         1911 False  True   False    False      False   False  
+0x0000000033c12d80 AudioIPC Callba       15079 False  True   False    False      False   False  
+0x0000000033c15b00 AudioIPC Callba       15080 False  True   False    False      False   False  
+0x0000000033c50000 WebExtensions         15180 False  True   False    False      False   False  
+0x0000000033c52d80 localStorage DB       15209 False  True   False    False      False   False  
+0x0000000033cfc440 dconf worker          15069 False  True   False    False      False   False  
+0x0000000033cfdb00 pool                  15061 False  True   False    False      False   False  
+0x0000000033d896c0 FS Broker 15136       15141 False  True   False    False      False   False  
+0x0000000034472d80 DataStorage           15154 False  True   False    False      False   False  
+0x000000003447db00 ImageIO               15096 False  True   False    False      False   False  
+0x0000000034485b00 ProcessHangMon        15142 False  True   False    False      False   False  
+0x0000000034488000 systemd-udevd         15299 False  True   False    False      False   False  
+0x0000000034892d80 FS Broker 15180       15188 False  True   False    False      False   False  
+0x000000003491ad80 Gecko_IOThread        15072 False  True   False    False      False   False  
+0x000000003491db00 gdbus                 15071 False  True   False    False      False   False  
+0x0000000034ce2d80 dconf worker          15145 False  True   False    False      False   False  
+0x0000000034d08000 PaintThread           14664 False  True   False    False      False   False  
+0x0000000034d096c0 JS Watchdog           14703 False  True   False    False      False   False  
+0x0000000034d0ad80 JS Helper             14704 False  True   False    False      False   False  
+0x0000000034d0c440 Timer                 14663 False  True   False    False      False   False  
+0x0000000034d0db00 DataStorage           14666 False  True   False    False      False   False  
+0x0000000034f5c440 Chrome_~dThread       15144 False  True   False    False      False   False  
+0x0000000034fa16c0 ImageBr~geChild       15140 False  True   False    False      False   False  
+0x00000000350d8000 Web Content           15136 False  True   False    False      False   False  
+0x00000000350d96c0 firefox               15135 False  True   False    False      False   False  
+0x00000000350ddb00 firefox               15134 False  True   False    False      False   False  
+0x00000000351e0000 DOM Worker            15177 False  True   False    False      False   False  
+0x00000000351e8000 PaintThread           15199 False  True   False    False      False   False  
+0x00000000351ead80 Timer                 15198 False  True   False    False      False   False  
+0x0000000035208000 IPDL Background       14608 False  True   False    False      False   False  
+0x00000000352096c0 HTML5 Parser          14611 False  True   False    False      False   False  
+0x000000003520ad80 Socket Thread         14660 False  True   False    False      False   False  
+0x000000003520c440 file                  14928 False  True   False    False      False   False  
+0x000000003520db00 DOM Worker            14610 False  True   False    False      False   False  
+0x0000000035280000 ProcessHangMon        15162 False  True   False    False      False   False  
+0x00000000352816c0 Cache I/O             15164 False  True   False    False      False   False  
+0x0000000035282d80 ProfilerChild         15163 False  True   False    False      False   False  
+0x00000000352e0000 ImageIO               15159 False  True   False    False      False   False  
+0x00000000352e16c0 DNS Resolver #1       15156 False  True   False    False      False   False  
+0x00000000352e2d80 Classif~ Update       15157 False  True   False    False      False   False  
+0x00000000352e4440 ImgDecoder #1         15158 False  True   False    False      False   False  
+0x000000003548ad80 IndexedDB #2          15215 False  True   False    False      False   False  
+0x0000000035528000 URL Classifier        15155 False  True   False    False      False   False  
+0x00000000356b16c0 pool                  15272 False  True   False    False      False   False  
+0x00000000356b2d80 pool                  15273 False  True   False    False      False   False  
+0x00000000356b4440 pool                  15271 False  True   False    False      False   False  
+0x0000000035708000 pool                  14905 False  True   False    False      False   False  
+0x00000000357096c0 pool                  14904 False  True   False    False      False   False  
+0x000000003570ad80 DOM File              14787 False  True   False    False      False   False  
+0x000000003570c440 gmain                 14902 False  True   False    False      False   False  
+0x000000003570db00 gdbus                 14903 False  True   False    False      False   False  
+0x000000003578c440 JS Watchdog           15192 False  True   False    False      False   False  
+0x0000000035e196c0 IPDL Background       15099 False  True   False    False      False   False  
+0x0000000035e1c440 pool                  15098 False  True   False    False      False   False  
+0x0000000035e38000 indicator-datet        1209 False  True   False    False      False   False  
+0x0000000035e396c0 pool                   1206 False  True   False    False      False   False  
+0x000000003725d300 HTML5 Parser          14611 False  True   False    False      False   False  
+0x0000000038004440 bash                  15256 False  True   False    False      False   False  
+0x00000000380cad80 bash                  15248 False  True   False    False      False   False  
+0x00000000380cc440 lesspipe              15249 False  True   False    False      False   False  
+0x00000000380cdb00 basename              15250 False  True   False    False      False   False  
+0x0000000038158000 JS Helper             15193 False  True   False    False      False   False  
+0x000000003815ad80 JS Helper             15194 False  True   False    False      False   False  
+0x00000000381b16c0 pool                  15277 False  True   False    False      False   False  
+0x00000000381f0000 pool                  15244 False  True   False    False      False   False  
+0x0000000038505b00 file:// Content       15167 False  True   False    False      False   False  
+0x0000000038630000 pool                  15247 False  True   False    False      False   False  
+0x000000003871ad80 ImgDecoder #1         15095 False  True   False    False      False   False  
+0x000000003871c440 VRListener            15094 False  True   False    False      False   False  
+0x00000000387d16c0 pool                  15166 False  True   False    False      False   False  
+0x00000000387d5b00 StreamTrans #29       15127 False  True   False    False      False   False  
+0x00000000388916c0 dircolors             15254 False  True   False    False      False   False  
+0x0000000038998000 VideoChild            15161 False  True   False    False      False   False  
+0x0000000038d55300 ext4-rsv-conver         186 False  True   False    False      False   False  
+0x000000003938c080 kworker/0:5             242 False  True   False    False      False   False  
+0x000000003938d740 $?                    15071 False  True   False    False      False   False  
+0x00000000393ba080 bash                  15256 False  True   False    False      False   False  
+0x00000000393bb740 ??Y}?H??[]?        1993 False  True   False    False      False   False  
+0x00000000395cad80 ImageBr~geChild       15160 False  True   False    False      False   False  
+0x00000000395f4440 pool                  15278 False  True   False    False      False   False  
+0x000000003969ad80 JS Helper             15148 False  True   False    False      False   False  
+0x00000000397c8000 ImgDecoder #1         15182 False  True   False    False      False   False  
+0x0000000039e5d300 ipv6_addrconf            88 False  True   False    False      False   False  
+0x000000003a5aa080 zeitgeist-fts          2263 False  True   False    False      False   False  
+0x000000003a5ab740                        2254 False  True   False    False      False   False  
+0x000000003a795080 colord                 1127 False  True   False    False      False   False  
+0x000000003a796740 ibus-engine-sim        1416 False  True   False    False      False   False  
+0x000000003ac9b300 systemd-journal         214 False  True   False    False      False   False  
+0x000000003acaf740 H?EpH??H9?w?H??      15149 False  True   False    False      False   False  
+0x000000003b37b300 polkitd                 747 False  True   False    False      False   False  
+0x000000003b3e7740                        1920 False  True   False    False      False   False  
+0x000000003b49c080 gmain                  1891 False  True   False    False      False   False  
+0x000000003b4bf300 dconf worker          14764 False  True   False    False      False   False  
+0x000000003b617300 dconf worker          15241 False  True   False    False      False   False  
+0x000000003b6d0740 ??                      655 False  True   False    False      False   False  
+0x000000003b49d740 ?H?@H??E1?H?k(       1842 False  True   False    False      False   False  
+0x000000003cb70000 pool                  15274 False  True   False    False      False   False  
+0x000000003d9a16c0 Chrome_~dThread       15190 False  True   False    False      False   False  
+0x000000003e2f8000 AudioIPC Server       15081 False  True   False    False      False   False  
+0x000000003e2f96c0 AudioIPC Server       15082 False  True   False    False      False   False  
+0x000000003f9b0300 IPDL Background       15099 False  True   False    False      False   False  
+0x000000003ff02080 gmain                  2267 False  True   False    False      False   False  
+0x000000003ff03740                        2268 False  True   False    False      False   False  

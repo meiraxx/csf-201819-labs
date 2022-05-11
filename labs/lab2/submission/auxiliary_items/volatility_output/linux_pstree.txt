@@ -1,0 +1,154 @@
+Name                 Pid             Uid            
+systemd              1                              
+.systemd-journal     214                            
+.rsyslogd            638             104            
+.dbus-daemon         646             106            
+.accounts-daemon     658                            
+.cron                660                            
+.avahi-daemon        665             111            
+..avahi-daemon       723             111            
+.systemd-logind      670                            
+.NetworkManager      671                            
+..dhclient           811                            
+..dnsmasq            824             65534          
+.acpid               687                            
+.snapd               697                            
+.polkitd             747                            
+.lightdm             773                            
+..Xorg               789                            
+..lightdm            1025                           
+...upstart           1211            1000           
+....upstart-udev-br  1291            1000           
+....dbus-daemon      1298            1000           
+....window-stack-br  1310            1000           
+....bamfdaemon       1349            1000           
+....upstart-dbus-br  1354            1000           
+....upstart-dbus-br  1357            1000           
+....upstart-file-br  1359            1000           
+....ibus-daemon      1361            1000           
+.....ibus-dconf      1382            1000           
+.....ibus-ui-gtk3    1393            1000           
+.....ibus-engine-sim 1416            1000           
+....gvfsd            1367            1000           
+....gvfsd-fuse       1378            1000           
+....at-spi-bus-laun  1379            1000           
+.....dbus-daemon     1396            1000           
+....ibus-x11         1398            1000           
+....at-spi2-registr  1403            1000           
+....gpg-agent        1601            1000           
+....hud-service      1693            1000           
+....unity-settings-  1695            1000           
+....gnome-session-b  1704            1000           
+.....nm-applet       1898            1000           
+.....nautilus        1901            1000           
+.....unity-fallback- 1909            1000           
+.....polkit-gnome-au 1910            1000           
+.....gnome-software  1911            1000           
+.....zeitgeist-datah 2240            1000           
+.....update-notifier 2414            1000           
+.....deja-dup-monito 14147           1000           
+....unity-panel-ser  1716            1000           
+....indicator-messa  1748            1000           
+....indicator-bluet  1749            1000           
+....indicator-power  1750            1000           
+....indicator-datet  1766            1000           
+....indicator-keybo  1768            1000           
+....indicator-sound  1773            1000           
+....indicator-print  1779            1000           
+....indicator-sessi  1785            1000           
+....indicator-appli  1810            1000           
+....pulseaudio       1814            1000           
+....dconf-service    1845            1000           
+....evolution-sourc  1804            1000           
+....compiz           1877            1000           
+....evolution-calen  1869            1000           
+.....evolution-calen 1923            1000           
+.....evolution-calen 1956            1000           
+....gvfs-udisks2-vo  1937            1000           
+....gvfs-afc-volume  1965            1000           
+....evolution-addre  1957            1000           
+.....evolution-addre 1982            1000           
+....gvfs-gphoto2-vo  1974            1000           
+....gvfs-goa-volume  1981            1000           
+....gvfs-mtp-volume  1987            1000           
+....gvfsd-trash      2020            1000           
+....gvfsd-metadata   2047            1000           
+....sh               2248            1000           
+.....zeitgeist-daemo 2253            1000           
+....zeitgeist-fts    2263            1000           
+....gvfsd-network    14217           1000           
+....gvfsd-dnssd      14243           1000           
+....main             14919           1000           
+.....main            14921           1000           
+....gnome-terminal-  15240           1000           
+.....bash            15246           1000           
+......sudo           15294                          
+.......insmod        15297                          
+.rtkit-daemon        1084            118            
+.upowerd             1105                           
+.colord              1127            113            
+.systemd             1148            1000           
+..(sd-pam)           1149            1000           
+.gnome-keyring-d     1196            1000           
+.whoopsie            1422            109            
+.agetty              1433                           
+.udisksd             1948                           
+.fwupd               1959                           
+.systemd-timesyn     4738            100            
+.systemd-udevd       7208                           
+.cupsd               14400                          
+..dbus               14411           7              
+..dbus               14412           7              
+.cups-browsed        14401                          
+.(tmpfiles)          15298                          
+[kthreadd]           2                              
+.[kworker/0:0H]      4                              
+.[mm_percpu_wq]      6                              
+.[ksoftirqd/0]       7                              
+.[rcu_sched]         8                              
+.[rcu_bh]            9                              
+.[migration/0]       10                             
+.[watchdog/0]        11                             
+.[cpuhp/0]           12                             
+.[kdevtmpfs]         13                             
+.[netns]             14                             
+.[rcu_tasks_kthre]   15                             
+.[kauditd]           16                             
+.[khungtaskd]        17                             
+.[oom_reaper]        18                             
+.[writeback]         19                             
+.[kcompactd0]        20                             
+.[ksmd]              21                             
+.[khugepaged]        22                             
+.[crypto]            23                             
+.[kintegrityd]       24                             
+.[kblockd]           25                             
+.[ata_sff]           26                             
+.[md]                27                             
+.[edac-poller]       28                             
+.[devfreq_wq]        29                             
+.[watchdogd]         30                             
+.[kworker/u2:1]      31                             
+.[kswapd0]           34                             
+.[ecryptfs-kthrea]   35                             
+.[kthrotld]          77                             
+.[acpi_thermal_pm]   78                             
+.[scsi_eh_0]         79                             
+.[scsi_tmf_0]        80                             
+.[scsi_eh_1]         81                             
+.[scsi_tmf_1]        82                             
+.[kworker/u2:2]      83                             
+.[kworker/u2:3]      84                             
+.[ipv6_addrconf]     88                             
+.[kstrp]             97                             
+.[charger_manager]   114                            
+.[kworker/u2:4]      159                            
+.[kworker/0:1H]      160                            
+.[scsi_eh_2]         161                            
+.[scsi_tmf_2]        162                            
+.[jbd2/sda1-8]       185                            
+.[ext4-rsv-conver]   186                            
+.[kworker/0:5]       242                            
+.[iprt-VBoxWQueue]   324                            
+.[ttm_swap]          329                            
+.[kworker/0:0]       14829                          
